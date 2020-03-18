@@ -1,6 +1,6 @@
 # Coding Languages and the Command Line
 
-![Terminal](/docs/img/terminal_mac.webp) ![python logo](docs/img/python_logo.png)
+![Terminal](/docs/img/terminal_mac.webp) ![python logo](/docs/img/python_logo.png)
 
 Everyone starts out with a diffent level of experience with coding, If you take me for example
 I came into the Graduate program here knowing little to nothing about how to code, just basic for loops
