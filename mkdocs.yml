@@ -1,0 +1,12 @@
+site_name: HBSM UTA Docs
+nav: 
+    - Home: index.md
+    - Coding: 
+        - Command Line: coding.md
+        - Python: python.md
+    - ROOT: root.md
+    - The Tier 3: tier3.md
+    - Neural Networks: neuralnets.md
+    - About: about.md
+
+theme: "material"
