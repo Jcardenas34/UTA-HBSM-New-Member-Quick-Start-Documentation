@@ -11,6 +11,12 @@ a reference document, a video series on youtube, or a tutorial outlining steps w
 It's a link to cool LO-FI music that you can listen to
 
 Take what you can from these links, and add new ones to this document if you feel youve learned more from it.
+Our general meetings that take place every tuesday and Friday have a page where we post our results for the week
+as well as a link to the video calling software that we use when we are unable to meet physically [here](https://indico.cern.ch/event/884412/)
+
+ask us for the password to the page, as it is unwise to post it in a public place like this.
+
+
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
@@ -27,4 +33,5 @@ Getting started with a CERN account
 Vidyo
 Common practices tools and resources people in the collaboration use
 like vidyo and indico
+
 
