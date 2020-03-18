@@ -4,6 +4,7 @@ nav:
     - Coding: 
         - Command Line: coding.md
         - Python: python.md
+        - Github: github.md
     - ROOT: root.md
     - The Tier 3: tier3.md
     - Neural Networks: neuralnets.md
