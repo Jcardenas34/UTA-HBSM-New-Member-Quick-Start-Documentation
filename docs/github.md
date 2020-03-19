@@ -1,6 +1,6 @@
 # Getting Started with Github
 
-![github logo](/docs/img/github-logo.png)
+![github logo](img/github-logo.png)
 
 Git hub, is a way for you to store your files on free online cloud server, as well as a way for multiple people
 to make changes to the same piece of software. Lots of Groups in ATLAS use github because that have many members that need
