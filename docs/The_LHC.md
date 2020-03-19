@@ -1,5 +1,7 @@
 #The LHC (Large Hadron Collider)
 
+![The_LCH](img/LHC.jpg)
+
 We get our data from the ATLAS detector at the Large hadron Collider in Geneva Switzerland.
 The LHC is a proton collider that is 27km (16 miles) in circumference and has components ranging from 50 to 175 meters
 underground. We put or collider underground so that particles coming from outer space get caught in the earth above it,
