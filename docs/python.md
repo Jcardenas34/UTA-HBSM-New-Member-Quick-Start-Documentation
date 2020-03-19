@@ -1,6 +1,6 @@
 ## Python and C++ our Main Programming Languages
 
-![python logo](/docs/img/python_logo.png)
+![python logo](img/python_logo.png)
 
 There are certian programming languages that people use for differnt project types, for example,
 if you were to try and build a website you might want to learn to code in HTML or if you were in Data science it might
