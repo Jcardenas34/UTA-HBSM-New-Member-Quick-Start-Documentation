@@ -1,6 +1,6 @@
 # Coding Languages and the Command Line
 
-![Terminal](/docs/img/terminal_mac.webp) 
+![Terminal](img/terminal_mac.webp) 
 
 Everyone starts out with a diffent level of experience in coding, If you take me for example
 I came into the Graduate program here knowing little to nothing about how to code, just basic for loops
