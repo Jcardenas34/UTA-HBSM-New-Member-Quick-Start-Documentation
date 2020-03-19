@@ -22,6 +22,14 @@ are working on is stored on a cluster that goes down (becomes unusable for a per
 I cannot tell you how many times either the tier3 or GPU cluster went down and I was forced to rewrite major pieces of my code or wait until the cluster went back online, which sometimes can be weeks, depending on what caused the issue.
 
 
+
 So thats it for an introduction, I think this video series is pretty good at explaining what Git and Github is 
 and how to use it. [Learn Git/Github here](https://www.youtube.com/watch?v=3RjQznt-8kE&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR)
+
+GitLab
+============
+There also exists another more comprehensive version of GitHub called GitLab, that is used to larger collaborations
+and besides having a cooler logo, it has expanded functionality that comes in handy when working with larger groups of people. ATLAS and other collaborations in the LCH use GitLab instead of Git hub because of its features, while we as a smaller group at UTA would more than likely use a github page to store all our code and collaborate, it is important to know of the existance of GitLab for when you eventually have to use it as part of a collaboration wide project.
+
+
 
