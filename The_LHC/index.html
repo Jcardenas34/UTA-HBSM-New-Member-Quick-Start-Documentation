@@ -36,7 +36,7 @@
     
     
       
-        <title>The Tier 3 - HBSM UTA Docs</title>
+        <title>The LHC - HBSM UTA Docs</title>
       
     
     
@@ -75,7 +75,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#the-tier3-the-high-energy-physics-hep-cluster" tabindex="0" class="md-skip">
+      <a href="#the-lhc-large-hadron-collider" tabindex="0" class="md-skip">
         Skip to content
       </a>
     
@@ -101,7 +101,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                The Tier 3
+                The LHC
               
             </span>
           
@@ -252,20 +252,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" title="The Tier 3" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../tier3/" title="The Tier 3" class="md-nav__link">
       The Tier 3
     </a>
-    
   </li>
 
     
@@ -321,25 +312,16 @@
               
                 
                 
-                <h1 id="the-tier3-the-high-energy-physics-hep-cluster">The Tier3: The High Energy Physics (HEP) Cluster</h1>
-<p><img alt="cluster" src="../img/servers.jpeg" />  </p>
-<p>If you stay in the computing world it is more than likely youll run into a situation where youll have to use a computer cluster. These computer clusters are used when you have a piece of code that requires a lot of computing resources such as the need to run on multiple processors or requires much more RAM than one computer can provide. A lot of the time in 
-High Energy Physics we create such pieces of code. The computing cluster that we have access to in the High Energy Physics (HEP) department is called the Tier3. It is part of 3 clusters associated with the LHC (Tier1, tier2, and Tier3), and certian universities host them, we are one of them. The tier3 is what does all the computation for analysis, the others have other dedicated processes. There are other computing clusters that CERN uses, such as the GRID and lxplus, but from day to day since the tier3 is located on campus, you will be using this most of the time.  </p>
-<p>In general the way that clusters are structured is as such, </p>
-<h1 id="the-head-node">The Head node</h1>
-<p>This is the computer that you or any person who wants to access the cluster logs into via "ssh". If you have not logged into the tier3 yet, you will have to contact the cluster manager at UTA, at the time of writing this is </p>
-<pre><code>Mark Sosebee:
-sosebee@exchange.uta.edu
-</code></pre>
-
-<p>who will create an account for you and give you instructions on how to log in. Here is the basic command that you will use at your command line to login to the tier3</p>
-<pre><code>ssh -X &lt;user_name&gt;@master.tier3-ATLAS.uta.edu
-</code></pre>
-
-<p>This Head node, is where you will be doing most of your work, and where you will submit your code to what we call a batch scheduler that will effectively run your code. The Batch schedueler is the program that distributes your job to the rest of the computers connected to the head node, called the compute nodes and tells them to run the script you are writing, there are many types of bactch scheduelers that different clusters use, some popular ones are "Slurm", named after the famous drink in futurama, Condor which is used by the lxplus cluster that CERN uses and PBS (Portable Batch Schedueler) which we use on the tier3. Each one of these batch scheduelers has a set of commands you can type to give you information on the current jobs that are runnning on the cluster as well as commands that will submit your code to the cluster such as "qsub". BUT, In order to make the compute nodes process your code, instead of typing out "qsub script_you_want_to_run.suffix" where suffix can be anything from .py to .cxx, you must create what we call a submission script. This is a script with a siffix of ".sub" that lets the batch schedueler know how many processors you want to use, as well as how much RAM and compute time you need. and also contains all of the commands that you want the compute nodes to execute. There will be an example of how to write a basic submission script as well as links to the documentation on all the possible options in a section below.</p>
-<h1 id="the-compute-nodes">The Compute nodes</h1>
-<p>The compute nodes are what do all of the computation in your script, and they are all connected to the head node via the batch schedueler, which as I said above determines via a submission script how many compute nodes will process your code and many other computing resources are needed.</p>
-<h1 id="the-batch-script">The Batch Script</h1>
+                <h1 id="the-lhc-large-hadron-collider">The LHC (Large Hadron Collider)</h1>
+<p>We get our data from the ATLAS detector at the Large hadron Collider in Geneva Switzerland.
+The LHC is a proton collider that is 27km (16 miles) in circumference and has components ranging from 50 to 175 meters
+underground. We put or collider underground so that particles coming from outer space get caught in the earth above it,
+and don’t interfere with our experiments. It accelerates bunches of protons to a center of mass energy of 13TeV and collides
+them at 4 points along the ring where the detectors are located, every 25 Nano-seconds. The detectors are called LHCb, ATLAS,
+ALICE and CMS. Once the protons are collided, they create a shower of other particles that are then deposited into the walls
+of our detector, where they can then be interpreted as data for us to work with. Now its important to note that most of the
+particles created in the collision have a very short lifetime, and decay before they reach the walls of the detector. They
+decay into more stable, Final state particles, that we can then use to reconstruct what created them.</p>
                 
                   
                 
@@ -357,41 +339,6 @@ sosebee@exchange.uta.edu
       
         
 <footer class="md-footer">
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid">
-        
-          <a href="../root/" title="ROOT" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
-            </div>
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                ROOT
-              </span>
-            </div>
-          </a>
-        
-        
-          <a href="../neuralnets/" title="Neural Networks" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Neural Networks
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
