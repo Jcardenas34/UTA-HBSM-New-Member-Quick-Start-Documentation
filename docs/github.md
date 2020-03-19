@@ -1,6 +1,6 @@
 # Getting Started with Github
 
-![github logo](img/github-logo.png)
+![github_logo](img/github_logo.jpg)
 
 Git hub, is a place for you to store your code on a free online cloud server, as well as provides a way for multiple people
 to work on the same piece of code simultaneously, similar to a google doc if youve ever used one. 
@@ -28,6 +28,7 @@ and how to use it. [Learn Git/Github here](https://www.youtube.com/watch?v=3RjQz
 
 GitLab
 ============
+![gitlab_logo](img/gitlab_logo.png)
 There also exists another more comprehensive version of GitHub called GitLab, that is used to larger collaborations
 and besides having a cooler logo, it has expanded functionality that comes in handy when working with larger groups of people. ATLAS and other collaborations in the LCH use GitLab instead of Git hub because of its features, while we as a smaller group at UTA would more than likely use a github page to store all our code and collaborate, it is important to know of the existance of GitLab for when you eventually have to use it as part of a collaboration wide project.
 
