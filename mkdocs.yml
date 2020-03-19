@@ -1,6 +1,9 @@
 site_name: HBSM UTA Docs
 nav: 
     - Home: index.md
+    - The LHC:
+        The_LHC.md
+        
     - Coding: 
         - Command Line: coding.md
         - Python: python.md
