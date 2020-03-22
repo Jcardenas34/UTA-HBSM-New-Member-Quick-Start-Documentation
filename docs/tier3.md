@@ -31,4 +31,22 @@ The Batch Script
 ==========================
 
 
+Reference Documents
+==========================
+
+There exists user documentation and a reference guide on how to use the pbs batch system, linked below
+
+[User Guide](https://www.pbsworks.com/pdfs/PBSUserGuide18.2.pdf) for PBS
+
+[Reference guide](https://www.pbsworks.com/pdfs/PBSRefGuide18.2.pdf) for PBS
+
+
+The user guide is a more comprehensive document that teaches you about most of the aspects of the PBS (Portable batch system),
+the reference guide is more of a summary of all possible commands that you can input, both in the PBS script and in the command prompt
+
+
+
+
+
+
 
