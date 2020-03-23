@@ -52,7 +52,7 @@ So at the time of writing, the tier3 has an annoying feature where it disconnect
 after a few minutes of inactivity. This is particularly annoying when you have to ssh into multiple clusters, and must
 leave the tier3 terminal inactive for a while, but will return to it later. When you return, you see that the termial is now inactive, and you must log in again, and navigate to where you were previously. Luckily, there are a few changes you can make in your ssh_config script that will help you extend the time before timeout.
 
-These instructions work on a *mac*, but if you have some sort of linux based command line terminal installed on your computer, is should work just the same. For windows you can either use "commander" or "git terminal" or "ubuntu bash shell", I will add more on how to install this in the [Accelerating your workflow](docs/cyberduck.md) part of the page later.
+These instructions work on a *mac*, but if you have some sort of linux based command line terminal installed on your computer, is should work just the same. For windows you can either use "commander" or "git terminal" or "ubuntu bash shell", I will add more on how to install this in the [Accelerating your workflow](cyberduck.md) part of the page later.
 
 When you first open your terminal, you will be logged into the home directory of your personal computer. You will want to open this file with whatever text editor you prefer.
 
@@ -76,7 +76,9 @@ Host *
  ```
  Host *
 	SendEnv LANG LC_*
+	
 	ServerAliveInterval 120
+	
 	ServerAliveCountMax 720
  ```
 and save the changes. The firstaddition we made makes it so a blank message is sent to the server every 120 seconds in order to keep the connection, the second line we added makes it so that it will log you off if this is done 720 times, 
