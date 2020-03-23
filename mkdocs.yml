@@ -3,17 +3,15 @@ nav:
     - Home: index.md
     - Our Experiment:
         - The Detectors: The_LHC.md
-        
     - Coding: 
         - Command Line: coding.md
         - Python: python.md
         - Github: github.md
-         - ROOT: root.md
-
+        - ROOT: root.md
     - The Computing Aspect:
+        - Accelerating Workflow: cyberduck.md
         - The Tier 3: tier3.md
         - Neural Networks: neuralnets.md
-        
     - About: about.md
 
 theme: "material"

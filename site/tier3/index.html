@@ -186,10 +186,46 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
     
     <label class="md-nav__link" for="nav-2">
-      Coding
+      Our Experiment
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-2">
+        Our Experiment
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../The_LHC/" title="The Detectors" class="md-nav__link">
+      The Detectors
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Coding
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
         Coding
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -231,6 +267,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../root/" title="ROOT" class="md-nav__link">
+      ROOT
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -240,17 +288,26 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../root/" title="ROOT" class="md-nav__link">
-      ROOT
-    </a>
-  </li>
 
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      
-      
-      
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      The Computing Aspect
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        The Computing Aspect
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
 
   
 
@@ -268,16 +325,21 @@
     
   </li>
 
-    
-      
-      
-      
+        
+          
+          
+          
 
 
   <li class="md-nav__item">
     <a href="../neuralnets/" title="Neural Networks" class="md-nav__link">
       Neural Networks
     </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -322,7 +384,7 @@
                 
                 
                 <h1 id="the-tier3-the-high-energy-physics-hep-cluster">The Tier3: The High Energy Physics (HEP) Cluster</h1>
-<p><img alt="cluster" src="img/Servers.jpeg" />  </p>
+<p><img alt="cluster" src="../img/servers.jpeg" />  </p>
 <p>If you stay in the computing world it is more than likely youll run into a situation where youll have to use a computer cluster. These computer clusters are used when you have a piece of code that requires a lot of computing resources such as the need to run on multiple processors or requires much more RAM than one computer can provide. A lot of the time in 
 High Energy Physics we create such pieces of code. The computing cluster that we have access to in the High Energy Physics (HEP) department is called the Tier3. It is part of 3 clusters associated with the LHC (Tier1, tier2, and Tier3), and certian universities host them, we are one of them. The tier3 is what does all the computation for analysis, the others have other dedicated processes. There are other computing clusters that CERN uses, such as the GRID and lxplus, but from day to day since the tier3 is located on campus, you will be using this most of the time.  </p>
 <p>In general the way that clusters are structured is as such, </p>
@@ -337,9 +399,16 @@ sosebee@exchange.uta.edu
 </code></pre>
 
 <p>This Head node, is where you will be doing most of your work, and where you will submit your code to what we call a batch scheduler that will effectively run your code. The Batch schedueler is the program that distributes your job to the rest of the computers connected to the head node, called the compute nodes and tells them to run the script you are writing, there are many types of bactch scheduelers that different clusters use, some popular ones are "Slurm", named after the famous drink in futurama, Condor which is used by the lxplus cluster that CERN uses and PBS (Portable Batch Schedueler) which we use on the tier3. Each one of these batch scheduelers has a set of commands you can type to give you information on the current jobs that are runnning on the cluster as well as commands that will submit your code to the cluster such as "qsub". BUT, In order to make the compute nodes process your code, instead of typing out "qsub script_you_want_to_run.suffix" where suffix can be anything from .py to .cxx, you must create what we call a submission script. This is a script with a siffix of ".sub" that lets the batch schedueler know how many processors you want to use, as well as how much RAM and compute time you need. and also contains all of the commands that you want the compute nodes to execute. There will be an example of how to write a basic submission script as well as links to the documentation on all the possible options in a section below.</p>
+<p>As of now, the tier-3 cluster is contained in one rack in CPB 115. This is the machine room where the tier-2 system we operate for ATLAS is located. By comparison the tier-2 system occupies 27 racks.</p>
 <h1 id="the-compute-nodes">The Compute nodes</h1>
 <p>The compute nodes are what do all of the computation in your script, and they are all connected to the head node via the batch schedueler, which as I said above determines via a submission script how many compute nodes will process your code and many other computing resources are needed.</p>
 <h1 id="the-batch-script">The Batch Script</h1>
+<h1 id="reference-documents">Reference Documents</h1>
+<p>There exists user documentation and a reference guide on how to use the pbs batch system, linked below</p>
+<p><a href="https://www.pbsworks.com/pdfs/PBSUserGuide18.2.pdf">User Guide</a> for PBS</p>
+<p><a href="https://www.pbsworks.com/pdfs/PBSRefGuide18.2.pdf">Reference guide</a> for PBS</p>
+<p>The user guide is a more comprehensive document that teaches you about most of the aspects of the PBS (Portable batch system),
+the reference guide is more of a summary of all possible commands that you can input, both in the PBS script and in the command prompt</p>
                 
                   
                 
