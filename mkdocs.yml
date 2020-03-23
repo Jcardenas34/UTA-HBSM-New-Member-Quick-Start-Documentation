@@ -1,16 +1,19 @@
 site_name: HBSM UTA Docs
 nav: 
     - Home: index.md
-    - The LHC:
-        The_LHC.md
+    - Our Experiment:
+        - The Detectors: The_LHC.md
         
     - Coding: 
         - Command Line: coding.md
         - Python: python.md
         - Github: github.md
-    - ROOT: root.md
-    - The Tier 3: tier3.md
-    - Neural Networks: neuralnets.md
+         - ROOT: root.md
+
+    - The Computing Aspect:
+        - The Tier 3: tier3.md
+        - Neural Networks: neuralnets.md
+        
     - About: about.md
 
 theme: "material"

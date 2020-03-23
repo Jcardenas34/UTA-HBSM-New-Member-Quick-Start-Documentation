@@ -13,6 +13,9 @@ particles created in the collision have a very short lifetime, and decay before 
 decay into more stable, Final state particles, that we can then use to reconstruct what created them.
 
 
+The ATLAS Detector
+============================
+
 
 
 

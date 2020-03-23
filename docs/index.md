@@ -1,6 +1,8 @@
 # Charged Higgs UTA 
 # Quick Start Documentation
 
+![CPB](img/CPB_at_UTA.jpg)
+
 
 The way that this documentation is structured is in a series of links.
 Very many resources That I used to learn the practicle skills needed to do Particle Physics 

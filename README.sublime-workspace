@@ -1,0 +1,856 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tauid_",
+				"tauid_nn_decaymode_1p"
+			],
+			[
+				"deca",
+				"decaymode0n_NoTruth"
+			],
+			[
+				"Pan",
+				"PanTau_DecayMode"
+			],
+			[
+				"Panta",
+				"PanTauDetail"
+			],
+			[
+				"ba",
+				"batch_size"
+			],
+			[
+				"full",
+				"full_model_streams"
+			],
+			[
+				"Plo",
+				"plot_name1\tstr ⟠"
+			],
+			[
+				"Original",
+				"Original_model"
+			],
+			[
+				"do",
+				"doratio"
+			],
+			[
+				"signal",
+				"signal_eval\tunknown ⟠"
+			],
+			[
+				"dr",
+				"draw_plots"
+			],
+			[
+				"model",
+				"model_evaluation_streams\tstr ⟠"
+			],
+			[
+				"back",
+				"background_non_eval\tunknown ⟠"
+			],
+			[
+				"sign",
+				"signal_eval\tunknown ⟠"
+			],
+			[
+				"roc3",
+				"roc3p_RNN_2\tunknown ⟠"
+			],
+			[
+				"roc",
+				"roc1p_RNN\tunknown ⟠"
+			],
+			[
+				"scale",
+				"scale_flat(…)\tfunction ⟠"
+			],
+			[
+				"sigtr",
+				"TauJets_RNNJetScoreSigTrans"
+			],
+			[
+				"mc",
+				"TauJets_mcEventNumber"
+			],
+			[
+				"total",
+				"total_sig\tlist | ndarray | tuple ⟠"
+			],
+			[
+				"sample",
+				"sample_sig\tlist ⟠"
+			],
+			[
+				"sapl",
+				"sample_sig\tlist ⟠"
+			],
+			[
+				"pl",
+				"pyplot as plt\tmodule ⟠"
+			],
+			[
+				"sig",
+				"sig"
+			],
+			[
+				"plt_eva",
+				"plt_eval_RNN_BDT_Comparision\tunknown ⟠"
+			],
+			[
+				"plt_non",
+				"plt_non_eval_RNN\tunknown ⟠"
+			],
+			[
+				"plt_eval",
+				"plt_eval_BDT\tunknown ⟠"
+			],
+			[
+				"plt_eval_R",
+				"plt_eval_RNN\tunknown ⟠"
+			],
+			[
+				"plt",
+				"plt_eval_RNN_BDT_Comparision\tunknown ⟠"
+			],
+			[
+				"si",
+				"signal_eval\tunknown ⟠"
+			],
+			[
+				"Line",
+				"LineStyle"
+			],
+			[
+				"plt_RN",
+				"plt_RNN_Comparision\tunknown ⟠"
+			],
+			[
+				"w",
+				"write"
+			],
+			[
+				"plot",
+				"plot_name5\tstr ⟠"
+			],
+			[
+				"roc1",
+				"roc1p_RNN_2\tunknown ⟠"
+			],
+			[
+				"background_",
+				"background_non_eval\tunknown ⟠"
+			],
+			[
+				"signal_",
+				"signal_non_eval\tunknown ⟠"
+			],
+			[
+				"plt_",
+				"plt_RNN\tunknown ⟠"
+			],
+			[
+				"file",
+				"total_files"
+			],
+			[
+				"roc1p_",
+				"roc1p_BDT"
+			],
+			[
+				"roc3p_",
+				"roc3p_BDT"
+			],
+			[
+				"of",
+				"ofstream"
+			],
+			[
+				"plo",
+				"plot_name"
+			],
+			[
+				"lead",
+				"leadjet3"
+			],
+			[
+				"lea",
+				"leadjet2"
+			],
+			[
+				"fatjet1ta",
+				"fatjet1Tau32"
+			],
+			[
+				"Nj",
+				"nTotalJet"
+			],
+			[
+				"nje",
+				"nTotalJet"
+			],
+			[
+				"fat",
+				"fatjet1M"
+			],
+			[
+				"dR_fatjet1_",
+				"dR_fatjet1_jet3"
+			],
+			[
+				"dR_jets_",
+				"dR_jets_2_3"
+			],
+			[
+				"dR",
+				"dR_jets_1_2"
+			],
+			[
+				"dR_f",
+				"dR_fatjet1_jet2"
+			],
+			[
+				"fatjet",
+				"fatjet2vector"
+			],
+			[
+				"del",
+				"DeltaR"
+			],
+			[
+				"nor",
+				"normalized_canvas"
+			],
+			[
+				"current",
+				"current_signal"
+			],
+			[
+				"curre",
+				"current_signal"
+			],
+			[
+				"temp_hi",
+				"temp__bkg_hist_list"
+			],
+			[
+				"jet2",
+				"jet2MV2c10"
+			],
+			[
+				"jet2M",
+				"jet2M"
+			],
+			[
+				"jet1M",
+				"jet1M"
+			],
+			[
+				"jet3M",
+				"jet3MV2c10"
+			],
+			[
+				"jet1",
+				"jet1MV2c10"
+			],
+			[
+				"dRfatje",
+				"dR_fatjet1_jet1"
+			],
+			[
+				"dR_fa",
+				"dR_fatjet_vector"
+			],
+			[
+				"num",
+				"num_subjets"
+			],
+			[
+				"fatjetv",
+				"fatjet1vector"
+			],
+			[
+				"njet",
+				"nJet30"
+			],
+			[
+				"vect",
+				"vect_of_bkgs_for_hist"
+			],
+			[
+				"normal",
+				"normalized_legend"
+			],
+			[
+				"tree",
+				"tree_name"
+			],
+			[
+				"sing",
+				"singletop_channels"
+			],
+			[
+				"ttbar",
+				"ttbar_decays"
+			],
+			[
+				"ste",
+				"stepCutflow"
+			],
+			[
+				"cut",
+				"cutflow"
+			],
+			[
+				"fatjetp",
+				"fatjet1Pt"
+			],
+			[
+				"All",
+				"AllcutFlow"
+			],
+			[
+				"plot_",
+				"plot_outline"
+			],
+			[
+				"tpye",
+				"type_i"
+			],
+			[
+				"start",
+				"start_signal_tree"
+			],
+			[
+				"Get",
+				"GetMaximum"
+			],
+			[
+				"fatjet2",
+				"fatjet2Pt"
+			],
+			[
+				"fatjet1",
+				"fatjet1Pt"
+			],
+			[
+				"star",
+				"start_signal_tree"
+			],
+			[
+				"bkg",
+				"bkg_name"
+			],
+			[
+				"Set",
+				"SetTitle"
+			],
+			[
+				"temp",
+				"temp_stack"
+			],
+			[
+				"te",
+				"temp_hist_list"
+			],
+			[
+				"over",
+				"overlay_canvas"
+			],
+			[
+				"vecot",
+				"vect_of_bkgs_integrals"
+			],
+			[
+				"get",
+				"GetMaximum"
+			],
+			[
+				"hist_",
+				"hist_i"
+			],
+			[
+				"nJ",
+				"nJet30"
+			],
+			[
+				"Se",
+				"SetLogx"
+			],
+			[
+				"hsta",
+				"hstackttbar"
+			],
+			[
+				"type",
+				"type_i"
+			],
+			[
+				"in",
+				"integal_of_hist"
+			],
+			[
+				"TLoren",
+				"TLorentzVector"
+			],
+			[
+				"dPhi",
+				"dPhi_btwn_jets_and_lep"
+			],
+			[
+				"sum",
+				"sum_lead_jets"
+			],
+			[
+				"Tlo",
+				"TLorentzVector"
+			],
+			[
+				"nJe",
+				"nTotalJet"
+			],
+			[
+				"opei",
+				"opening_angle"
+			],
+			[
+				"typ",
+				"type_i"
+			],
+			[
+				"all_",
+				"all_leading_lep_are_hplus_hist"
+			],
+			[
+				"Ge",
+				"GetXaxis"
+			],
+			[
+				"higgs",
+				"higgsinoParent"
+			],
+			[
+				"opp",
+				"opp_sign_leps"
+			],
+			[
+				"true",
+				"true_leps"
+			],
+			[
+				"child",
+				"child"
+			],
+			[
+				"tau",
+				"tau_vector"
+			],
+			[
+				"inva",
+				"A0_invariant_mass_hist"
+			],
+			[
+				"dR_",
+				"dR_true_lep_leading_lep_hist"
+			],
+			[
+				"total_Hpl",
+				"total_Hplus_lep_jet_overlap"
+			],
+			[
+				"total_H",
+				"total_Hplus_lep_jet_overlap"
+			],
+			[
+				"HIST",
+				"HIST"
+			],
+			[
+				"A",
+				"AthDerivation"
+			],
+			[
+				"Tru",
+				"TruthParticles"
+			],
+			[
+				"jet_lea",
+				"jet_leading_second_pt_hist"
+			],
+			[
+				"leadin",
+				"jet_leading_pt_hist"
+			],
+			[
+				"inde",
+				"index_list"
+			],
+			[
+				"jet",
+				"jet_list"
+			],
+			[
+				"ele",
+				"electrons"
+			],
+			[
+				"Overlay_n",
+				"Overlay_norm_to_1_1lep"
+			],
+			[
+				"taus_vis_in",
+				"taus_vis_invariant_mass_hist"
+			],
+			[
+				"A0_",
+				"A0_mass_500"
+			],
+			[
+				"mass",
+				"mass_points"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"indent",
+				"Indexing Status"
+			],
+			[
+				"inder",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install packa",
+				"Package Control: Install Package"
+			],
+			[
+				"install package",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 151.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Carde/bash_scripts/work_log.txt",
+		"/Users/Carde/UTA-HBSM-New-Member-Quick-Start-Documentation/docs/cyberduck.md",
+		"/Users/Carde/.gitconfig",
+		"/Users/Carde/UTA-HBSM-New-Member-Quick-Start-Documentation/docs/neuralnets.md",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/cluster_scripts/HDF5_Conversion/3prong/Test_set_scripts/HDF5_Gamma_3p_Test.sub",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/cluster_scripts/HDF5_Conversion/3prong/Test_set_scripts/HDF5_JZXW_3p0n_Test.sub",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/cluster_scripts/HDF5_Conversion/3prong/Test_set_scripts/HDF5_JZXW_3pXn_Test.sub",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/cluster_scripts/HDF5_Conversion/3prong/Test_set_scripts/HDF5_JZXW_3p_Test.sub",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/cluster_scripts/HDF5_Conversion/3prong/Test_set_scripts/HDF5_Gamma_3pXn_Test.sub",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/cluster_scripts/HDF5_Conversion/3prong/Test_set_scripts/HDF5_Gamma_3p0n_Test.sub",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/ee20264a-740d-4013-a410-de68d97871b0/home/jcardenas/qualification_task/looking_at_model.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/ee20264a-740d-4013-a410-de68d97871b0/home/jcardenas/qualification_task/plotting_scripts/ROC_PLOTS_HDF5.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/2prongScoreTuner.alg/config.json",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/THOR/THOR/THOR/share/StreamRNNTauID/Main.py",
+		"/Users/Carde/Charged_Higgs_Group_Easy_Start_Documentation/docs/index.md",
+		"/Users/Carde/Charged_Higgs_Group_Easy_Start_Documentation/mkdocs.yml",
+		"/Users/Carde/Charged_Higgs_Group_Easy_Start_Documentation/docs/coding.md",
+		"/Users/Carde/Charged_Higgs_Group_Easy_Start_Documentation/docs/root.md",
+		"/Users/Carde/Charged_Higgs_Group_Easy_Start_Documentation/docs/neuralnets.md",
+		"/Users/Carde/Charged_Higgs_Group_Easy_Start_Documentation/docs/tier3.md",
+		"/Users/Carde/Charged_Higgs_Group_Easy_Start_Documentation/docs/about.md",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/THOR/THOR/athena/Reconstruction/tauRecTools/tauRecTools/TauJetRNNEvaluator.h",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/THOR/THOR/athena/Reconstruction/tauRecTools/Root/TauJetRNNEvaluator.cxx",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/THOR/THOR/THOR/python/TauAlgorithmsHolder.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/ee20264a-740d-4013-a410-de68d97871b0/home/jcardenas/qualification_task/rnn-tauid/scripts/train_experimental.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/ee20264a-740d-4013-a410-de68d97871b0/home/jcardenas/qualification_task/rnn-tauid/src/rnn_tauid/utils.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/ee20264a-740d-4013-a410-de68d97871b0/home/jcardenas/qualification_task/rnn-tauid/src/rnn_tauid/variables.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/ee20264a-740d-4013-a410-de68d97871b0/home/jcardenas/qualification_task/rnn-tauid/scripts/ntuple2hdf.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/ee20264a-740d-4013-a410-de68d97871b0/home/jcardenas/qualification_task/rnn-tauid/src/rnn_tauid/cuts.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/THOR/THOR/athena/Reconstruction/tauRecTools/tauRecTools/TauWPDecorator.h",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/THOR/THOR/athena/Reconstruction/tauRecTools/Root/TauWPDecorator.cxx",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/plots_dir/plotting_scripts/ROC_for_RNNs_tier3.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/MyFirstScoreTuner.alg/config.json",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/rnn-tauid/src/eventloop/NtupleCreator/NtupleCreator/NtupleCreator.h",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/rnn-tauid/src/eventloop/NtupleCreator/Root/NtupleCreator.cxx",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/rnn-tauid/scripts/RunNtupleCreator.py",
+		"/Users/Carde/bash_scripts/all_work_logs/work_log_Dec_2019.txt",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/loki/loki/train/algs.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/MyFirstScoreTuner.alg/config.json",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/ROC_for_RNN.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/ee20264a-740d-4013-a410-de68d97871b0/home/jcardenas/qualification_task/rnn-tauid/scripts/train_experimental_backup.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/e111d29a-93e9-4efc-8dbe-e653559702f7/eos/home-j/jcardena/qualification_task/THOR/THOR/THOR/share/StreamRNNTauID/Main.py",
+		"/Users/Carde/bash_scripts/all_work_logs/work_log_Jan_2020.txt",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/THOR/THOR/athena/Reconstruction/tauRecTools/Root/TauJetRNNUtils.cxx",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/THOR/THOR/athena/Reconstruction/tauRecTools/tauRecTools/TauJetRNNUtils.h",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/THOR/THOR/athena/Reconstruction/tauRecTools/Root/TauJetRNN.cxx",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/THOR/THOR/athena/Reconstruction/tauRecTools/tauRecTools/TauJetRNN.h",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/THOR/THOR/athena/Reconstruction/tauRecTools/share/tauid_nn_decaymode_1p.json",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/THOR/THOR/athena/Reconstruction/tauRecTools/share/tauid_nn_retrained_100%_1prong.json",
+		"/Users/Carde/bash_scripts/all_work_logs/work_log_feb.txt",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/e111d29a-93e9-4efc-8dbe-e653559702f7/eos/home-j/jcardena/qualification_task/THOR/THOR/athena/Reconstruction/tauRecTools/Root/TauJetRNN.cxx",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/e111d29a-93e9-4efc-8dbe-e653559702f7/eos/home-j/jcardena/qualification_task/THOR/THOR/THOR/python/TauAlgorithmsHolder.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/e111d29a-93e9-4efc-8dbe-e653559702f7/eos/home-j/jcardena/qualification_task/THOR/THOR/athena/Reconstruction/tauRecTools/tauRecTools/TauWPDecorator.h",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/e111d29a-93e9-4efc-8dbe-e653559702f7/eos/home-j/jcardena/qualification_task/THOR/THOR/athena/Reconstruction/tauRecTools/Root/TauWPDecorator.cxx",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/ee20264a-740d-4013-a410-de68d97871b0/home/jcardenas/qualification_task/rnn-tauid/scripts/decorate.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/ee20264a-740d-4013-a410-de68d97871b0/home/jcardenas/qualification_task/rnn-tauid/scripts/rescore_data_experimental.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/ee20264a-740d-4013-a410-de68d97871b0/home/jcardenas/qualification_task/ROC_PLOTS_HDF5.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/ee20264a-740d-4013-a410-de68d97871b0/home/jcardenas/qualification_task/rnn-tauid/src/lwtnn/scripts/lwtnn-split-keras-network_test.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/lwtnn_packages.txt",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/ee20264a-740d-4013-a410-de68d97871b0/home/jcardenas/qualification_task/rnn-tauid/src/lwtnn/scripts/lwtnn-split-keras-network.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/ee20264a-740d-4013-a410-de68d97871b0/home/jcardenas/qualification_task/conda_python_packages_GPU_usable.txt",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/rnn-tauid/scripts/ntuple2hdf_parallel.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/conda_python_packages_usable.txt",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/rnn-tauid/src/rnn_tauid/variables.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/rnn-tauid/src/rnn_tauid/models.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/rnn-tauid/scripts/train_experimental.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/rnn-tauid/src/rnn_tauid/utils.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/plots_dir/RNNSigTrans_plot/ROC_PLOTS_HDF5.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/rnn-tauid/src/rnn_tauid/cuts.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/rnn-tauid/scripts/ntuple2hdf.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/local_THOR_attempt/plots/ROC_Original_thousandth.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/local_THOR_attempt/plots/ROC_Original_full.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/local_THOR_attempt/plots/ROC_for_RNNs_local_thor.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/loki/loki/core/hist.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/loki/loki/core/plot.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/loki/loki/core/file.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/loki/loki/core/process.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/loki/loki/common/samples.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/loki/loki/core/sample.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/loki/examples/example03_overlays.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/RNN_plots/plotting_scripts/ROC_for_RNNs_tier3.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/THOR/THOR/tauRecToolsDev/tauRecToolsDev/RNNTauIDVarsCalculator.h",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/THOR/THOR/tauRecToolsDev/Root/RNNTauIDVarsCalculator.cxx",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/THOR/THOR/THOR/python/CommonLoads.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/THOR/THOR/THOR/share/StreamRNNTauID/RNNTauIDVars.txt",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/THOR/THOR/THOR/share/StreamRNNTauID/MinBranches.txt",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/RNN_plots/plotting_scripts/ROC_for_RNNs_lxplus.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/RNN_plots/cluster_plts/ROC_PLOTS_HDF5_cluster_vars.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/RNN_plots/high_lvl_var_plts/ROC_PLOTS_HDF5_high_lvl.py",
+		"/Users/Carde/Desktop/Hadavand_Particle_Group/qualification task/RNN variables.txt",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/RNN_plots/ROC_PLOTS_HDF5.py",
+		"/Users/Carde/bash_scripts/work_log_Dec_2019.txt",
+		"/Users/Carde/bash_scripts/work_log_Nov_2019.txt",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/e111d29a-93e9-4efc-8dbe-e653559702f7/eos/home-j/jcardena/qualification_task/rnn-tauid/src/rnn_tauid/models.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/e111d29a-93e9-4efc-8dbe-e653559702f7/eos/home-j/jcardena/qualification_task/rnn-tauid/scripts/train_experimental.py",
+		"/Users/Carde/bash_scripts/work_log.sh",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/e111d29a-93e9-4efc-8dbe-e653559702f7/afs/cern.ch/user/j/jcardena/THOR/THOR/THOR/share/StreamRNNTauID/Main.py",
+		"/Users/Carde/Desktop/NOTES ON XEDE MACHINE LEARNING WORKSHOP",
+		"/Users/Carde/.ssh/known_hosts",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/model_evaluation_streams/RNN_ROC_Curves/ROC_for_RNN_model_evaluated.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/loki/loki/core/setup.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/loki/examples/example06_roc.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/loki/examples/example07_fileloading.py",
+		"/Users/Carde/bash_scripts/all_work_logs/work_log_Oct_2019.txt",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/loki/loki/common/styles.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/loki/loki/common/cuts.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/loki/loki/common/vars.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/loki/loki/core/style.py",
+		"/Users/Carde/RaspberryPi_Cluster/fabfile.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/e111d29a-93e9-4efc-8dbe-e653559702f7/eos/home-j/jcardena/qualification_task/rnn-tauid/scripts/setup/setup_python.sh",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/loki/loki/tauid/plots.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/loki/loki/utils/plot.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/loki/loki/utils/main.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/loki/examples/config.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/model_evaluation_streams/RNN_ROC_Curves/ROC_for_RNN.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/model_evaluation_streams/ROC_for_RNN.py",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/loki/loki/utils/quickplot.py",
+		"/Users/Carde/bash_scripts/all_work_logs/work_log_sept_2019.txt",
+		"/Users/Carde/bash_scripts/all_work_logs/work_log_Aug_2019.txt",
+		"/private/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/17311493-b817-419f-a843-76c9c989083b/cluster/home/jcardenas34/qualification_task/loki/loki/utils/helpers.py",
+		"/Users/Carde/bash_scripts/all_work_logs/work_log_feb_2019.txt",
+		"/Users/Carde/bash_scripts/all_work_logs/work_log_june_2019.txt",
+		"/Users/Carde/bash_scripts/all_work_logs/work_log_march_april_2019.txt",
+		"/Users/Carde/bash_scripts/all_work_logs/work_log_may_2019.txt",
+		"/Users/Carde/bash_scripts/all_work_logs/work_log_dec_jan_2019.txt",
+		"/var/folders/f4/17dyf20x4y15xxt0b5d4y1_m0000gn/T/kite_tutorial.py",
+		"/Users/Carde/Desktop/UTA Classes/Math Methods 3/HW 3/random-walk-2D (Juan Cardenas).py",
+		"/Users/Carde/bash_scripts/all_work_logs/work_log_jun_jul_2019.txt"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 103.0
+	},
+	"pinned_build_system": "",
+	"project": "README.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"wor",
+				"~/bash_scripts/work_log.txt"
+			],
+			[
+				"",
+				"/private/var/folders/h5/l6gm502d0tz80bf7vb9gz8mm0000gn/T/1f59ee73-967c-4cb2-83f9-a804c328443f/home/ATLAS-T3/jcardenas34/workspace/cutflow/makeCutFlow_newCode.cxx"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 120.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
