@@ -45,6 +45,44 @@ The user guide is a more comprehensive document that teaches you about most of t
 the reference guide is more of a summary of all possible commands that you can input, both in the PBS script and in the command prompt
 
 
+How to make a Tier3 not timeout
+===================================
+
+So at the time of writing, the tier3 has an annoying feature where it disconnects your login session in the terminal
+after a few minutes of inactivity. This is particularly annoying when you have to ssh into multiple clusters, and must
+leave the tier3 terminal inactive for a while, but will return to it later. When you return, you see that the termial is now inactive, and you must log in again, and navigate to where you were previously. Luckily, there are a few changes you can make in your ssh_config script that will help you extend the time before timeout.
+
+These instructions work on a *mac*, but if you have some sort of linux based command line terminal installed on your computer, is should work just the same. For windows you can either use "commander" or "git terminal" or "ubuntu bash shell", I will add more on how to install this in the [Accelerating your workflow](docs/cyberduck.md) part of the page later.
+
+When you first open your terminal, you will be logged into the home directory of your personal computer. You will want to open this file with whatever text editor you prefer.
+
+```
+/etc/ssh/ssh_config
+```
+
+by typing, *either, emacs, sublime, nano, vim, atom* or your preferred text editor name, and then the line above.
+
+This is a file that tells the command prompt how to insteract with any computer that you choose to ssh into, weather that be the tier3 or another cluster somewhere else.
+
+All of the lines in this file should be commented out, except for a small section near the bottom of the page. which should look like this.
+
+```
+Host *
+	SendEnv LANG LC_*
+```
+ 
+ you want to add a few lines to it so that It looks like this
+ 
+ ```
+ Host *
+	SendEnv LANG LC_*
+	ServerAliveInterval 120
+	ServerAliveCountMax 720
+ ```
+and save the changes. The firstaddition we made makes it so a blank message is sent to the server every 120 seconds in order to keep the connection, the second line we added makes it so that it will log you off if this is done 720 times, 
+so 720 x 120 seconds = 24 hours, you can adjust this second number to 30 for one hour tuntil timeout, or to 60 for 2 hours of sustained login during 2 hours of inactivity.
+
+
 
 
 
