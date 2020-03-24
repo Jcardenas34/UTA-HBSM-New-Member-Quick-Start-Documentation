@@ -36,7 +36,7 @@
     
     
       
-        <title>ROOT - HBSM UTA Docs</title>
+        <title>The Super computer - HBSM UTA Docs</title>
       
     
     
@@ -75,7 +75,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#everything-root" tabindex="0" class="md-skip">
+      <a href="#the-gpu-cluster" tabindex="0" class="md-skip">
         Skip to content
       </a>
     
@@ -101,7 +101,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                ROOT
+                The Super computer
               
             </span>
           
@@ -216,12 +216,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
     <label class="md-nav__link" for="nav-3">
       Coding
@@ -261,20 +259,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" title="ROOT" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../root/" title="ROOT" class="md-nav__link">
       ROOT
     </a>
-    
   </li>
 
         
@@ -311,10 +300,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
     <label class="md-nav__link" for="nav-4">
       The Computing Aspect
@@ -342,11 +333,20 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../supercomputer/" title="The Super computer" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="The Super computer" class="md-nav__link md-nav__link--active">
       The Super computer
     </a>
+    
   </li>
 
         
@@ -407,11 +407,43 @@
               
                 
                 
-                <h1 id="everything-root">Everything ROOT</h1>
-<p><img alt="ROOT banner" src="../img/ROOT_banner.png" /></p>
-<p>As you have probably already realized, Doing physics has a lot of prerequisites. You have to learn a LOT
-of stuff before you can start doing actual research. But this tool, <a href="https://root.cern.ch/">ROOT</a> is the primary one that
-we use in the High energy physics communuty. It is a programming software that's compatible with both C++ and Python and used to Analyze data and create the plots that we use to visualize our results. It has a lot of capabilities, and using it with python makes the whole process of data analysis just a bit easier, Although ROOT is notoriously complicated and difficult to learn, My hope is to try and give you the basics so you can get on your way to performing data analysis and contribute to group progress as quickly as possible.</p>
+                <h1 id="the-gpu-cluster">The GPU Cluster</h1>
+<p>There exists another cluster on campus that is different from the tier3. It is a GPU super computer 
+managed by Dr.Farbin here at UTA. This cluster is similar to the tier3, but instead of having compute nodes that
+have many CPUs the nodes on the super computer host multiple GPUs (Graphical Processing units) that are capable of 
+executing many tasks in parallel. The general purpose for a GPU cluster is to do work in training machine learning algorithms
+such as the ones found in Neural networks. With Dr. Farbin's permission, and if you begin to do work with neural networks,
+you will find this cluster to be extremely useful. </p>
+<p>You will need to email Dr.Farbin at </p>
+<pre><code>afarbin@uta.edu
+</code></pre>
+
+<p>for him to give you an account on the supercomputer, but once you have all 
+the login information you should be able to access the computer by ssh-ing into it with the command below</p>
+<pre><code>ssh -X &lt;user_name&gt;@orodruin.uta.edu
+</code></pre>
+
+<h1 id="the-head-node">The Head node</h1>
+<p>The head node, just like the head node on the tier3, is where you will be doing most of your work.
+Similar to ther tier3, the head node on the super computer does have some GPU resources, it has
+4 GeForce GTX 1080 GPUs that can be used to test short scripts, although it is discouraged to run very
+large and computing intensive pieces of code on it, since it will interfere with others trying to login in
+or test thier scripts. It is best practice to submit your code via the the PBS batch schedueler like on the tier3
+or log into the compute node directly and submit your code ro be run.</p>
+<h1 id="gpu-compute-nodes">GPU compute nodes</h1>
+<p>The super computer has 4 GPU compute nodes and 1 ordinary CPU node, which can be accessed once you have
+logged into the main node as indicated above. Thier names are</p>
+<p>The Count, which has 10 TITAN X (Pascal) GPUs for use</p>
+<pre><code>ssh thecount
+</code></pre>
+
+<p>Thing One, has 4 GeForce GTX 1080 GPUs and together are just as powerful as the 10 GPUs on the count.</p>
+<pre><code>ssh thingone
+</code></pre>
+
+<p>Thing Two, which also has 4 GeForce GTX 1080 GPUs</p>
+<pre><code>ssh thingtwo
+</code></pre>
                 
                   
                 
@@ -433,7 +465,7 @@ we use in the High energy physics communuty. It is a programming software that's
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../python/" title="Python/C++" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../tier3/" title="The Tier 3" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -442,19 +474,19 @@ we use in the High energy physics communuty. It is a programming software that's
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Python/C++
+                The Tier 3
               </span>
             </div>
           </a>
         
         
-          <a href="../cyberduck/" title="Cyberduck and Sublime" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../neuralnets/" title="Neural Networks" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Cyberduck and Sublime
+                Neural Networks
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
