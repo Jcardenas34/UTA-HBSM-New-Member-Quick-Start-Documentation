@@ -12,6 +12,7 @@ nav:
         
     - The Computing Aspect:
         - The Tier 3: tier3.md
+        - The Super computer: supercomputer.md
         - Neural Networks: neuralnets.md
     - About: about.md
 
