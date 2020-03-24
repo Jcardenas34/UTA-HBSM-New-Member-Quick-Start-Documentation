@@ -5,11 +5,12 @@ nav:
         - The Detectors: The_LHC.md
     - Coding: 
         - Command Line: coding.md
-        - Python: python.md
-        - Github: github.md
+        - Python/C++: python.md
         - ROOT: root.md
+        - Cyberduck and Sublime: cyberduck.md
+        - Github: github.md
+        
     - The Computing Aspect:
-        - Accelerating Workflow: cyberduck.md
         - The Tier 3: tier3.md
         - Neural Networks: neuralnets.md
     - About: about.md
