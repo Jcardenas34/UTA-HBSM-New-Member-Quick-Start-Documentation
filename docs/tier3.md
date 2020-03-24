@@ -74,30 +74,38 @@ So what do the #PBS lines and the rest mean?
 These lines that start with #PBS tell the batch scheuduler certian directions on what to do and so they are called directives. Lets go line by line.
 
 ~!/bin/bash
+
 1. Says that we want to run this script in the terminal
 
 PBS -M juan.cardenas@mavs.uta.edu
+
 2. Allows you to be notified via email when your job is completed
 
 PBS -m abe
+
 3. Sets the conditions under which an email should be sent, here abe stand for send an email when the job is (borted,begins,terminates)
 
 PBS -e /cluster/home/jcardenas34/qualification_task/
+
 4. PBS creates an error and an output log file where the output and error messages given by your job are stored, name a path if you want to send this error to a specific place, otherwise it is created after the job is done, in the directory you submitted the job in.
 
 PBS -o /cluster/home/jcardenas34/qualification_task/
+
 5. Same as above, where but where the output file is sent
 
 PBS -j oe
+
 6. __Very important__, each time a job is completed, 2 log files are made, if a lot of job files are submitted, youll get a lot of log files, and it will quickly become a lot to sort through. so the -j option joins the error and output files together. You must also specify that you want to merge them by typing o and e together after -j
 
 PBS -l walltime=72:00:00
+
 7. __Also extremely important__, if not the most important, this is the estimated time you expect your job to finish in
 The format is in hrs:min:secs and if your job exceeds the amount of time you entered, your job is immedeately terminated.
 There is a current maximum time allowed for a job to run on each queue, on the "hep" queue this is 96:00:00
 and you can check the rest using qstat -q
 
 PBS -l qos=hep
+
 8. Tells the batch schedueler which queue you want to run on, the main reason for this is to allow more or less time for your job to run.
 
 
