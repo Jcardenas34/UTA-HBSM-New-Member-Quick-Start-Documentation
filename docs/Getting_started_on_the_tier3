@@ -16,7 +16,9 @@ emacs .bash_profile
 ```
 
 Alternatively, If you are already familiar with how to use Cyberduck or Filezilla, you can open this file using those programs
-so that it is editable using your preferred text editor
+so that it is editable using your preferred text editor but the basic instructions to seutp a release are here
+
+https://atlassoftwaredocs.web.cern.ch/ABtutorial/release_setup/
 
 
 
