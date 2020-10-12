@@ -1,0 +1,22 @@
+#Getting started on the tier3
+
+After you are able to log into the tier3 with a username and password that Mark Sosebee, our current cluster technician has provided to you.
+It is now time to setup your computing environment so that you can get to work, using root and any other ATLAS related tools.
+
+
+You want to begin by logging in, and opening up and editing a hidden file in your home directory called ".bash profile" this file will not be immedeately visible 
+when using the "ls" command, but will be visible using the "ls -a" command in the terminal. Any file with a period before its name is treated as a "hidden file" by
+bash, and will not appear with a simple "ls". Here are the commands that you want to type out.
+
+```
+#This command brings you back to the home directory is youre not already in it
+cd
+
+emacs .bash_profile
+```
+
+Alternatively, If you are already familiar with how to use Cyberduck or Filezilla, you can open this file using those programs
+so that it is editable using your preferred text editor
+
+
+
