@@ -1,4 +1,4 @@
-# The Tier3: The High Energy Physics (HEP) Cluster
+# Batch Scripting on the Tier3: The High Energy Physics (HEP) Cluster
 
 ![cluster](img/servers.jpeg)  
 
