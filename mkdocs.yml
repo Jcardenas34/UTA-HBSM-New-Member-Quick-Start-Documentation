@@ -14,6 +14,11 @@ nav:
         - The Tier 3: tier3.md
         - The Super Computer: supercomputer.md
         - Neural Networks: neuralnets.md
+        - Grid Certificates: Grid_Certificates.md 
+
+    - Conducting Analysis:
+        - Analysis: data_analysis.md
+        - Writing Papers: overleaf.md
     - About: about.md
 
 theme: "material"
