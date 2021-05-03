@@ -11,3 +11,5 @@ quicker edits.
 
 It turns out there is a way that you can edit files on a remote server while using the text editor of your choice, through an 
 sftp software called [Cyberduck](https://cyberduck.io/)
+
+
