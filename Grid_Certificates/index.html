@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Command Line - HBSM UTA Docs</title>
+        <title>Grid Certificates - HBSM UTA Docs</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -45,12 +45,12 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Coding <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="./" class="dropdown-item active">Command Line</a>
+    <a href="../coding/" class="dropdown-item">Command Line</a>
 </li>
                                     
 <li>
@@ -70,7 +70,7 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">The Computing Aspect <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -87,7 +87,7 @@
 </li>
                                     
 <li>
-    <a href="../Grid_Certificates/" class="dropdown-item">Grid Certificates</a>
+    <a href="./" class="dropdown-item active">Grid Certificates</a>
 </li>
                                 </ul>
                             </li>
@@ -116,12 +116,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../The_LHC/" class="nav-link">
+                                <a rel="prev" href="../neuralnets/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../python/" class="nav-link">
+                                <a rel="next" href="../data_analysis/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -143,7 +143,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#coding-languages-and-the-command-line" class="nav-link">Coding Languages and the Command Line</a>
+            <li class="nav-item" data-level="1"><a href="#grid-certificates" class="nav-link">Grid Certificates</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -152,19 +152,33 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="coding-languages-and-the-command-line">Coding Languages and the Command Line</h1>
-<p><img alt="Terminal" src="../img/terminal_mac.webp" /> </p>
-<p>Everyone starts out with a diffent level of experience in coding, If you take me for example
-I came into the Graduate program here knowing little to nothing about how to code, just basic for loops
-and varible declarations. But in joining the High Energy Community you will no doubt have to become a master
-In 2 programming languages they are <a href="http://www.cplusplus.com/info/description/">C++</a> and
-<a href="https://docs.python.org/2/">Python</a>. Where I have linked the sources to thier documentation in the links there.</p>
-<p>But before you can embark on your jouney in learning these programming languaes, you must learn 
-<a href="https://linuxjourney.com/lesson/the-shell">How to navigate your command line terminal</a>
-This is what will let you take your first steps so to say, It is what will allow you to run the C++ 
-and Python scripts that you write, as well as copy files to and from other computers.</p>
-<p>After you feel like you can do the very basic commands out of muscle memory, such as creating files and directories,
-moving and copying those files you can start learning about the coding languages we use on a daily basis, Python and C++.</p></div>
+<h1 id="grid-certificates">Grid Certificates</h1>
+<p>A grid certificate is a piece of information that will allow you to access the GRID for certain tasks, 
+like downloading files or submitting jobs to their computing resources. These Grid certificates expeire on a yearly basis and you should 
+renew them when you get the reminder from the CERN secretariate to renew. You are allowed to keep more than
+one grid certificate without them interfering. Just go to this website and type in your credentials.
+https://ca.cern.ch/ca/</p>
+<p>and click on "New Grid User Certificate", this should forward you to a page where you will be asked to log in, after which you must enter your password
+to either create a new grid certifiate, or renew an old one. Createing a new one, and renewing an old one basically do the same job.</p>
+<p>You should then install this certificate to your browser. For Google Chrome go to settings and then search "Manage Certificates" and 
+import the Grid Certificate that should be named "myCertificate.p12" and import that.</p>
+<p>Once you have this certificate in your downloads folder, scp that p12 file to the cluster which you will be using to dowload files with, or submit jobs from.</p>
+<p>once scped to the cluster of your choice log into that cluster, and you should see the myCertificate.p12 file in your home directory. Type these coomands in
+to use the grid certificate.</p>
+<p>'''
+openssl pkcs12 -in [your-cert-file] -clcerts -nokeys -out ~/.globus/usercert.pem
+openssl pkcs12 -in [your-cert-file] -nocerts -out ~/.globus/userkey.pem
+'''
+followed by</p>
+<p>'''
+chmod 0600 ~/.globus/usercert.pem
+chmod 0400 ~/.globus/userkey.pem
+'''</p>
+<p>The same, but more detailed version of the process above is outlined here.</p>
+<p>https://www.racf.bnl.gov/docs/howto/grid/installcert</p>
+<p>Once you have run the lines of code above, you can test out if the certificate is working by typing</p>
+<p>lsetup rucio
+and then setting up a proxy as instructed by lsetup.</p></div>
             </div>
         </div>
 
