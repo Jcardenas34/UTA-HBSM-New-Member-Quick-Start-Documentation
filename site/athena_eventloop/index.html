@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>The Super Computer - HBSM UTA Docs</title>
+        <title>Athena and Eventloop - HBSM UTA Docs</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -70,7 +70,7 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">The Computing Aspect <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -79,7 +79,7 @@
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active">The Super Computer</a>
+    <a href="../supercomputer/" class="dropdown-item">The Super Computer</a>
 </li>
                                     
 <li>
@@ -91,7 +91,7 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Conducting Analysis <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -100,7 +100,7 @@
 </li>
                                     
 <li>
-    <a href="../athena_eventloop/" class="dropdown-item">Athena and Eventloop</a>
+    <a href="./" class="dropdown-item active">Athena and Eventloop</a>
 </li>
                                     
 <li>
@@ -120,12 +120,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../tier3/" class="nav-link">
+                                <a rel="prev" href="../data_analysis/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../neuralnets/" class="nav-link">
+                                <a rel="next" href="../overleaf/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -147,17 +147,12 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#the-gpu-cluster" class="nav-link">The GPU Cluster</a>
+            <li class="nav-item" data-level="1"><a href="#atlas-releases" class="nav-link">ATLAS Releases</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="1"><a href="#the-head-node" class="nav-link">The Head node</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#gpu-compute-nodes" class="nav-link">GPU compute nodes</a>
+            <li class="nav-item" data-level="1"><a href="#athena" class="nav-link">Athena</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -166,39 +161,15 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="the-gpu-cluster">The GPU Cluster</h1>
-<p>There exists another cluster on campus that is different from the tier3. It is a GPU super computer 
-managed by Dr.Farbin here at UTA. This cluster is similar to the tier3, but instead of having compute nodes that
-have many CPUs the nodes on the super computer host multiple GPUs (Graphical Processing units) that are capable of 
-executing many tasks in parallel. The general purpose for a GPU cluster is to do work in training machine learning algorithms
-such as the ones found in Neural networks. With Dr. Farbin's permission, and if you begin to do work with neural networks,
-you will find this cluster to be extremely useful. </p>
-<p>You will need to email Dr.Farbin at </p>
-<pre><code>afarbin@uta.edu
-</code></pre>
-<p>for him to give you an account on the supercomputer, but once you have all 
-the login information you should be able to access the computer by ssh-ing into it with the command below</p>
-<pre><code>ssh -X &lt;user_name&gt;@orodruin.uta.edu
-</code></pre>
-<h1 id="the-head-node">The Head node</h1>
-<p>The head node, just like the head node on the tier3, is where you will be doing most of your work.
-Similar to ther tier3, the head node on the super computer does have some GPU resources, it has
-4 GeForce GTX 1080 GPUs that can be used to test short scripts, although it is discouraged to run very
-large and computing intensive pieces of code on it, since it will interfere with others trying to login in
-or test thier scripts. It is best practice to submit your code via the the PBS batch schedueler like on the tier3
-or log into the compute node directly and submit your code ro be run.</p>
-<h1 id="gpu-compute-nodes">GPU compute nodes</h1>
-<p>The super computer has 4 GPU compute nodes and 1 ordinary CPU node, which can be accessed once you have
-logged into the main node as indicated above. Thier names are</p>
-<p>The Count, which has 10 TITAN X (Pascal) GPUs for use</p>
-<pre><code>ssh thecount
-</code></pre>
-<p>Thing One, has 4 GeForce GTX 1080 GPUs and together are just as powerful as the 10 GPUs on the count.</p>
-<pre><code>ssh thingone
-</code></pre>
-<p>Thing Two, which also has 4 GeForce GTX 1080 GPUs</p>
-<pre><code>ssh thingtwo
-</code></pre></div>
+<h1 id="atlas-releases">ATLAS Releases</h1>
+<p>The ATLAS experiment releases a complete set ofsoftware packages that allow you to conduct research using variaous tools that they provide, that is called a "Release". These Releases are preiodically updated by variaous collaborators making improvements to the packages in the software, these releases are numbered, with the latest stable release being Release 22. Before this came Release 21, which is still widely used by researchers as of May 3rd 2021, since many of the analysis tools are still valid. As time goes on, each group slowly transitions to using the latest release, as they contain the most up to date ATLAS reccomendations for particle objects as well as particle variables that should be used.</p>
+<p>Before you conduct any sort of research, you must setup one of these releases on an ATLAS enabled machine or computer cluster. lxplus or the tier2 should work. After you setup this release, you should be able to run simple scripts that will allow you to loop over the data in an AOD (Analysis Object Data) using either a pything script or a c++ script. Bwlos is a good ATLAS resource that helps you setup a release, a version of Release 21 to be specific.</p>
+<p><a href="https://atlassoftwaredocs.web.cern.ch/ABtutorial/release_setup/">Setting up a Release</a></p>
+<p>You can ignore anything in "Building your own release (optional &amp; advanced)" and after. it is unnecessary to our introduction.</p>
+<h1 id="athena">Athena</h1>
+<p>Athena is one of the main software packages in the Release and is what allows most of the research to be done.
+The website below gives a good introduction to what you need to know about it.</p>
+<p><a href="https://atlassoftwaredocs.web.cern.ch/athena/">A Guide to Athena</a></p></div>
             </div>
         </div>
 

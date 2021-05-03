@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>The Super Computer - HBSM UTA Docs</title>
+        <title>Grid Certificates - HBSM UTA Docs</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -79,7 +79,7 @@
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active">The Super Computer</a>
+    <a href="../supercomputer/" class="dropdown-item">The Super Computer</a>
 </li>
                                     
 <li>
@@ -87,7 +87,7 @@
 </li>
                                     
 <li>
-    <a href="../Grid_Certificates/" class="dropdown-item">Grid Certificates</a>
+    <a href="./" class="dropdown-item active">Grid Certificates</a>
 </li>
                                 </ul>
                             </li>
@@ -120,12 +120,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../tier3/" class="nav-link">
+                                <a rel="prev" href="../neuralnets/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../neuralnets/" class="nav-link">
+                                <a rel="next" href="../data_analysis/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -147,17 +147,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#the-gpu-cluster" class="nav-link">The GPU Cluster</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#the-head-node" class="nav-link">The Head node</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#gpu-compute-nodes" class="nav-link">GPU compute nodes</a>
+            <li class="nav-item" data-level="1"><a href="#grid-certificates" class="nav-link">Grid Certificates</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -166,39 +156,33 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="the-gpu-cluster">The GPU Cluster</h1>
-<p>There exists another cluster on campus that is different from the tier3. It is a GPU super computer 
-managed by Dr.Farbin here at UTA. This cluster is similar to the tier3, but instead of having compute nodes that
-have many CPUs the nodes on the super computer host multiple GPUs (Graphical Processing units) that are capable of 
-executing many tasks in parallel. The general purpose for a GPU cluster is to do work in training machine learning algorithms
-such as the ones found in Neural networks. With Dr. Farbin's permission, and if you begin to do work with neural networks,
-you will find this cluster to be extremely useful. </p>
-<p>You will need to email Dr.Farbin at </p>
-<pre><code>afarbin@uta.edu
-</code></pre>
-<p>for him to give you an account on the supercomputer, but once you have all 
-the login information you should be able to access the computer by ssh-ing into it with the command below</p>
-<pre><code>ssh -X &lt;user_name&gt;@orodruin.uta.edu
-</code></pre>
-<h1 id="the-head-node">The Head node</h1>
-<p>The head node, just like the head node on the tier3, is where you will be doing most of your work.
-Similar to ther tier3, the head node on the super computer does have some GPU resources, it has
-4 GeForce GTX 1080 GPUs that can be used to test short scripts, although it is discouraged to run very
-large and computing intensive pieces of code on it, since it will interfere with others trying to login in
-or test thier scripts. It is best practice to submit your code via the the PBS batch schedueler like on the tier3
-or log into the compute node directly and submit your code ro be run.</p>
-<h1 id="gpu-compute-nodes">GPU compute nodes</h1>
-<p>The super computer has 4 GPU compute nodes and 1 ordinary CPU node, which can be accessed once you have
-logged into the main node as indicated above. Thier names are</p>
-<p>The Count, which has 10 TITAN X (Pascal) GPUs for use</p>
-<pre><code>ssh thecount
-</code></pre>
-<p>Thing One, has 4 GeForce GTX 1080 GPUs and together are just as powerful as the 10 GPUs on the count.</p>
-<pre><code>ssh thingone
-</code></pre>
-<p>Thing Two, which also has 4 GeForce GTX 1080 GPUs</p>
-<pre><code>ssh thingtwo
-</code></pre></div>
+<h1 id="grid-certificates">Grid Certificates</h1>
+<p>A grid certificate is a piece of information that will allow you to access the GRID for certain tasks, 
+like downloading files or submitting jobs to their computing resources. These Grid certificates expeire on a yearly basis and you should 
+renew them when you get the reminder from the CERN secretariate to renew. You are allowed to keep more than
+one grid certificate without them interfering. Just go to this website and type in your credentials.
+https://ca.cern.ch/ca/</p>
+<p>and click on "New Grid User Certificate", this should forward you to a page where you will be asked to log in, after which you must enter your password
+to either create a new grid certifiate, or renew an old one. Createing a new one, and renewing an old one basically do the same job.</p>
+<p>You should then install this certificate to your browser. For Google Chrome go to settings and then search "Manage Certificates" and 
+import the Grid Certificate that should be named "myCertificate.p12" and import that.</p>
+<p>Once you have this certificate in your downloads folder, scp that p12 file to the cluster which you will be using to dowload files with, or submit jobs from.</p>
+<p>once scped to the cluster of your choice log into that cluster, and you should see the myCertificate.p12 file in your home directory. Type these coomands in
+to use the grid certificate.</p>
+<p>'''
+openssl pkcs12 -in [your-cert-file] -clcerts -nokeys -out ~/.globus/usercert.pem
+openssl pkcs12 -in [your-cert-file] -nocerts -out ~/.globus/userkey.pem
+'''
+followed by</p>
+<p>'''
+chmod 0600 ~/.globus/usercert.pem
+chmod 0400 ~/.globus/userkey.pem
+'''</p>
+<p>The same, but more detailed version of the process above is outlined here.</p>
+<p>https://www.racf.bnl.gov/docs/howto/grid/installcert</p>
+<p>Once you have run the lines of code above, you can test out if the certificate is working by typing</p>
+<p>lsetup rucio
+and then setting up a proxy as instructed by lsetup.</p></div>
             </div>
         </div>
 
