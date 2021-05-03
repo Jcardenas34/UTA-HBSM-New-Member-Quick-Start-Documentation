@@ -22,5 +22,5 @@ nav:
         - Writing Papers: overleaf.md
     - About: about.md
 
-theme: "mkdocs"
-# theme: "material"
+# theme: "mkdocs"
+theme: "material"
