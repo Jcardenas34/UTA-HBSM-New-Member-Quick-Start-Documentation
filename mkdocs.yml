@@ -18,6 +18,7 @@ nav:
 
     - Conducting Analysis:
         - Analysis: data_analysis.md
+        - Athena and Eventloop: athena_eventloop.md
         - Writing Papers: overleaf.md
     - About: about.md
 
