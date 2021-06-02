@@ -26,7 +26,10 @@ We as a group, as well as a lot of other CERN affiliated groups have a place whe
 
 
 
-
+Contributions
+====================
+If you would like to contribute to either this [documentation](https://github.com/Jcardenas34/UTA-HBSM-New-Member-Quick-Start-Documentation), or [create working examples in code](https://gitlab.cern.ch/jcardena/hbsm-analysis-tutorials), click on the corresponding links to fork a git repo.
+Any help is appreciated!
 
 ## Works in progress
 

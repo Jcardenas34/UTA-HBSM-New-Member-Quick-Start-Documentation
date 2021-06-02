@@ -1,6 +1,6 @@
 site_name: HBSM UTA Docs
 nav: 
-    - Home: index.md
+    - Home: home_page.md
     - Our Experiment:
         - The Detectors: The_LHC.md
     - Coding: 
