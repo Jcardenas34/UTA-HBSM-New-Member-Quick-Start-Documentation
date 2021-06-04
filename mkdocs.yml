@@ -22,17 +22,17 @@ nav:
         - Writing Papers: overleaf.md
     - About: about.md
 
- # theme: "mkdocs"
- # theme: "material"
-theme: "material"
-palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
+theme: "mkdocs"
+# theme: "material"
+# theme: "material"
+# palette:
+#     - media: "(prefers-color-scheme: light)"
+#       scheme: default
+#       toggle:
+#         icon: material/toggle-switch-off-outline
+#         name: Switch to dark mode
+#     - media: "(prefers-color-scheme: dark)"
+#       scheme: slate
+#       toggle:
+#         icon: material/toggle-switch
+#         name: Switch to light mode
