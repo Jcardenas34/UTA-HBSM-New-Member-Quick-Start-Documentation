@@ -546,17 +546,15 @@ import the Grid Certificate that should be named "myCertificate.p12" and import 
 <p>Once you have this certificate in your downloads folder, scp that p12 file to the cluster which you will be using to dowload files with, or submit jobs from.</p>
 <p>once scped to the cluster of your choice log into that cluster, and you should see the myCertificate.p12 file in your home directory. Type these coomands in
 to use the grid certificate.</p>
-<p>'''
-openssl pkcs12 -in [your-cert-file] -clcerts -nokeys -out ~/.globus/usercert.pem
+<pre><code>openssl pkcs12 -in [your-cert-file] -clcerts -nokeys -out ~/.globus/usercert.pem
 openssl pkcs12 -in [your-cert-file] -nocerts -out ~/.globus/userkey.pem
-'''
-followed by</p>
-<p>'''
+</code></pre>
+<p>followed by</p>
+<p><code>`
 chmod 0600 ~/.globus/usercert.pem
-chmod 0400 ~/.globus/userkey.pem
-'''</p>
+chmod 0400 ~/.globus/userkey.pem</code></p>
 <p>The same, but more detailed version of the process above is outlined here.</p>
-<p>https://www.racf.bnl.gov/docs/howto/grid/installcert</p>
+<p><a href="https://www.racf.bnl.gov/docs/howto/grid/installcert">https://www.racf.bnl.gov/docs/howto/grid/installcert</a></p>
 <p>Once you have run the lines of code above, you can test out if the certificate is working by typing</p>
 <p>lsetup rucio
 and then setting up a proxy as instructed by lsetup.</p>
