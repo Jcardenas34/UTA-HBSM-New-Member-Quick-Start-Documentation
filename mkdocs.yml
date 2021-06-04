@@ -1,6 +1,6 @@
 site_name: HBSM UTA Docs
 nav: 
-    - Home: home_page.md
+    - Home: index.md
     - Our Experiment:
         - The Detectors: The_LHC.md
     - Coding: 
@@ -9,12 +9,14 @@ nav:
         - ROOT: root.md
         - Cyberduck and Sublime: cyberduck.md
         - Github: github.md
+        - Text Editors: Your_Text_Editor.md
         
     - The Computing Aspect:
         - The Tier 3: tier3.md
         - The Super Computer: supercomputer.md
         - Neural Networks: neuralnets.md
         - Grid Certificates: Grid_Certificates.md 
+        - Getting Started: Getting_started_on_the_tier3.md
 
     - Conducting Analysis:
         - Analysis: data_analysis.md
@@ -22,8 +24,8 @@ nav:
         - Writing Papers: overleaf.md
     - About: about.md
 
-theme: "mkdocs"
-# theme: "material"
+# theme: "mkdocs"
+theme: "material"
 # theme: "material"
 # palette:
 #     - media: "(prefers-color-scheme: light)"
