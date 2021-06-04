@@ -664,15 +664,12 @@ leave the tier3 terminal inactive for a while, but will return to it later. When
     SendEnv LANG LC_*
 </code></pre>
 <p>you want to add a few lines to it so that It looks like this</p>
-<p>```
- Host *
-    SendEnv LANG LC_*</p>
-<pre><code>ServerAliveInterval 120
-
-ServerAliveCountMax 720
+<pre><code> Host *
+    SendEnv LANG LC_*
+    ServerAliveInterval 120
+    ServerAliveCountMax 720
 </code></pre>
-<p>```
-and save the changes. The firstaddition we made makes it so a blank message is sent to the server every 120 seconds in order to keep the connection, the second line we added makes it so that it will log you off if this is done 720 times, 
+<p>and save the changes. The firstaddition we made makes it so a blank message is sent to the server every 120 seconds in order to keep the connection, the second line we added makes it so that it will log you off if this is done 720 times, 
 so 720 x 120 seconds = 24 hours, you can adjust this second number to 30 for one hour tuntil timeout, or to 60 for 2 hours of sustained login during 2 hours of inactivity.</p>
                 
               
