@@ -14,7 +14,7 @@
     
     
       
-        <title>The Super Computer - HBSM UTA Docs</title>
+        <title>MadGraph - HBSM UTA Docs</title>
       
     
     
@@ -59,7 +59,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#the-gpu-cluster" class="md-skip">
+        <a href="#getting-started-with-madgraph" class="md-skip">
           Skip to content
         </a>
       
@@ -89,7 +89,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              The Super Computer
+              MadGraph
             
           </span>
         </div>
@@ -326,14 +326,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
       <label class="md-nav__link" for="__nav_4">
         The Computing Aspect
@@ -361,21 +359,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../supercomputer/" class="md-nav__link">
         The Super Computer
       </a>
-      
     </li>
   
 
@@ -428,12 +416,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       <label class="md-nav__link" for="__nav_5">
         Conducting Analysis
@@ -461,11 +451,47 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../madgraph/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          MadGraph
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         MadGraph
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started-with-madgraph" class="md-nav__link">
+    Getting Started with MadGraph
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -531,8 +557,21 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started-with-madgraph" class="md-nav__link">
+    Getting Started with MadGraph
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -545,39 +584,36 @@
               
                 
                 
-                <h1 id="the-gpu-cluster">The GPU Cluster</h1>
-<p>There exists another cluster on campus that is different from the tier3. It is a GPU super computer 
-managed by Dr.Farbin here at UTA. This cluster is similar to the tier3, but instead of having compute nodes that
-have many CPUs the nodes on the super computer host multiple GPUs (Graphical Processing units) that are capable of 
-executing many tasks in parallel. The general purpose for a GPU cluster is to do work in training machine learning algorithms
-such as the ones found in Neural networks. With Dr. Farbin's permission, and if you begin to do work with neural networks,
-you will find this cluster to be extremely useful. </p>
-<p>You will need to email Dr.Farbin at </p>
-<pre><code>afarbin@uta.edu
-</code></pre>
-<p>for him to give you an account on the supercomputer, but once you have all 
-the login information you should be able to access the computer by ssh-ing into it with the command below</p>
-<pre><code>ssh -X &lt;user_name&gt;@orodruin.uta.edu
-</code></pre>
-<h1 id="the-head-node">The Head node</h1>
-<p>The head node, just like the head node on the tier3, is where you will be doing most of your work.
-Similar to ther tier3, the head node on the super computer does have some GPU resources, it has
-4 GeForce GTX 1080 GPUs that can be used to test short scripts, although it is discouraged to run very
-large and computing intensive pieces of code on it, since it will interfere with others trying to login in
-or test thier scripts. It is best practice to submit your code via the the PBS batch schedueler like on the tier3
-or log into the compute node directly and submit your code ro be run.</p>
-<h1 id="gpu-compute-nodes">GPU compute nodes</h1>
-<p>The super computer has 4 GPU compute nodes and 1 ordinary CPU node, which can be accessed once you have
-logged into the main node as indicated above. Thier names are</p>
-<p>The Count, which has 10 TITAN X (Pascal) GPUs for use</p>
-<pre><code>ssh thecount
-</code></pre>
-<p>Thing One, has 4 GeForce GTX 1080 GPUs and together are just as powerful as the 10 GPUs on the count.</p>
-<pre><code>ssh thingone
-</code></pre>
-<p>Thing Two, which also has 4 GeForce GTX 1080 GPUs</p>
-<pre><code>ssh thingtwo
-</code></pre>
+                  <h1>MadGraph</h1>
+                
+                <h2 id="getting-started-with-madgraph">Getting Started with MadGraph</h2>
+<p><img alt="MadGraph_Logo" src="img/madgraph5.png" /></p>
+<p>Any particle physics analysis needs to be able to simulate the physics processes that we beleive to be happening 
+before we look for them in the actual real life data. And there are a suite of different software that allows you to simulate these 
+physics processes, which means creating proton proton collisions that create new particles which then decay the way that they do in
+real life. The first step in the simulation process is simulating these proton proton collisions to a given procss that we are interested in. We can simulate these processes using a software that we call <a href="http://madgraph.physics.illinois.edu/">MadGraph</a></p>
+<p>As stated, MadGraph simulates different particle interations that are of interest to you. It also allows you to simulate physics processes
+that are outside the standard model by importing the model that you are interested in. for example, Madgraph allows you to simulate
+'''
+p p &gt; t t~
+'''</p>
+<p>Which is a completely standard model process (proton proton goes to top and an anti-top), or if you import the MSSM model (Minimally super symmetric model) you can gain access to all the particles in that theory and generate this process</p>
+<p>'''
+p p &gt; st st~
+'''</p>
+<p>Which is proton proton goes to stau anti-stau, where the stau is a super symmetric particle</p>
+<p>instructions on how to get started are below </p>
+<ol>
+<li>Create an account with MadGraph using the following link <a href="http://madgraph.physics.illinois.edu/">MadGraph account creation</a></li>
+<li>Once you created your account, go to the downloads link there and log in</li>
+<li>Once logged in right click on the "MadGraph5_aMC@NLO" link and select "Copy link address"</li>
+<li>Log into the tier3 and type "wget the_link_you_just_copied"</li>
+<li>Untar this file by doing tar -xvf file_you_just_downloaded.</li>
+<li>then navigate to the folder that was just created and type ./bin/mg5_aMC or python2.7 ./bin/mg5_amc if this does not work at first</li>
+<li>type "tutorial" and the madgraph tutorial should take it from there</li>
+</ol>
+<p>The section below will answer some questions about whats going on in madgraph, these are some questions I had anyway.</p>
+<p>FAQ:</p>
                 
               
               
@@ -596,7 +632,7 @@ logged into the main node as indicated above. Thier names are</p>
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../tier3/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../data_analysis/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -605,19 +641,19 @@ logged into the main node as indicated above. Thier names are</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              The Tier 3
+              Analysis
             </div>
           </div>
         </a>
       
       
-        <a href="../neuralnets/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../athena_eventloop/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Neural Networks
+              Athena and Eventloop
             </div>
           </div>
           <div class="md-footer__button md-icon">
