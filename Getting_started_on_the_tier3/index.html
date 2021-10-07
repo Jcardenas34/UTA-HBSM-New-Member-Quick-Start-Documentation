@@ -349,10 +349,44 @@
             
   
   
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Getting Started
+      </a>
+      
+    </li>
+  
+
+          
+            
+  
+  
   
     <li class="md-nav__item">
       <a href="../tier3/" class="md-nav__link">
         The Tier 3
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Grid_Certificates/" class="md-nav__link">
+        Grid Certificates
       </a>
     </li>
   
@@ -378,40 +412,6 @@
       <a href="../neuralnets/" class="md-nav__link">
         Neural Networks
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Grid_Certificates/" class="md-nav__link">
-        Grid Certificates
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        Getting Started
-      </a>
-      
     </li>
   
 
@@ -548,30 +548,43 @@
                 <h1 id="getting-started-on-the-tier3">Getting started on the tier3</h1>
 <p>After you are able to log into the tier3 with a username and password that Mark Sosebee, our current cluster technician has provided to you.
 It is now time to setup your computing environment so that you can get to work, using root and any other ATLAS related tools.</p>
-<p>You want to begin by logging in, and opening up and editing a hidden file in your home directory called ".bash profile" this file will not be immedeately visible 
-when using the "ls" command, but will be visible using the "ls -a" command in the terminal. Any file with a period before its name is treated as a "hidden file" by
+<p>You want to begin by logging in, and opening up and editing a hidden file in your home directory called ".bash profile". The ".bashrc" and ".bash_profile" files are scripts that are immedeately run when you log into a compute node on any computer (that is linux or unix based to my knowledge), it is the file that sets up all of your environment varaibles and all of your shortcuts also called "aliases". These file will not be immedeately visible when using the "ls" command, but will be visible using the "ls -a" command in the terminal. Any file with a period before its name is treated as a "hidden file" by
 bash, and will not appear with a simple "ls". Here are the commands that you want to type out.</p>
 <pre><code>#This command brings you back to the home directory is youre not already in it
 cd
 
 emacs .bash_profile
 </code></pre>
-<p>Alternatively, If you are already familiar with how to use Cyberduck or Filezilla, you can open this file using those programs
-so that it is editable using your preferred text editor but the basic instructions to seutp a release are here
-https://atlassoftwaredocs.web.cern.ch/ABtutorial/release_setup/</p>
+<p>you then want to copy the following lines into your ".bash_profile"</p>
 <pre><code>export ATLAS_LOCAL_ROOT_BASE=/cvmfs/atlas.cern.ch/repo/ATLASLocalRootBase
 alias setupATLAS='source ${ATLAS_LOCAL_ROOT_BASE}/user/atlasLocalSetup.sh'
 setupATLAS
 </code></pre>
-<p>follow the instructions on the link unitl you get to here</p>
-<pre><code>cd build/
+<p>These lines make the ATLAS software that is available on the tier3, available to you as a user.
+These are things like "athena"(Contains tools for general analysis like tau analysis tools),"root" (allows execution of these tools), "rucio" (allows you to access files that are stored on the CERN grid computing cluster, where we get our data DAODs and xAODs), "panda" (Allows you to submit a computing job to be executed to the CERN cluster), etc.</p>
+<p>Alternatively, If you are already familiar with how to use VS Code, Cyberduck or Filezilla, you can open the ".bash_profile" and any other file using those programs
+so that it is editable using your preferred text editor, which in the end will be more efficient in my experience for working than using emacs to edit files.</p>
+<p>````
+At this point, to activate the changes that were made to the ".bash_profile" you will either need to run ./bash_profile, or start up a new terminal.</p>
+<pre><code>
+Once the above line is done, you now have the ability to access the ATLAS analysis tools.
+So lets start by setting up a &quot;Release&quot;, the tools that are required by almost all analysis.
+
+The basic instructions to seutp a release are here
+https://atlassoftwaredocs.web.cern.ch/ABtutorial/release_setup/
+
+
+follow the instructions on the link unitl you get to something that looks like this,
+
+</code></pre>
+<p>cd build/
 asetup 21.2.6,AnalysisBase
 cmake ../source/
 make
-</code></pre>
-<p>you might have noticed that I have changed 125 to a 6, this is because our tier3 cluster does not have asetup 21.2.125 available to it,
-and so it is unable to setup it up. once you have changed 125 to 6, everything should run smoothly. And you should be able to 
-have root run over DAOD files</p>
+```
+you might have noticed that I have changed 125 to a 6, this is because our tier3 cluster does not have asetup 21.2.125 available to it, 
+and so it is unable to setup it up. lxplus should have the cutting edge versions of asetup, but the tier3 is only updated every few years or so.
+Once you have changed 125 to 6, everything should run smoothly. And you should be able to sart your analysis. i.e Have ROOT run over DAOD (Derived Analysis Object Data) files</p>
                 
               
               
@@ -590,7 +603,7 @@ have root run over DAOD files</p>
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../Grid_Certificates/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../Your_Text_Editor/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -599,19 +612,19 @@ have root run over DAOD files</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              Grid Certificates
+              Text Editors
             </div>
           </div>
         </a>
       
       
-        <a href="../data_analysis/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../tier3/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Analysis
+              The Tier 3
             </div>
           </div>
           <div class="md-footer__button md-icon">
