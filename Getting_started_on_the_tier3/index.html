@@ -570,15 +570,24 @@ so that it is editable using your preferred text editor, which in the end will b
 So lets start by setting up a "Release", the tools that are required by almost all analysis.</p>
 <p>The basic instructions to seutp a release are here
 https://atlassoftwaredocs.web.cern.ch/ABtutorial/release_setup/</p>
-<p>follow the instructions on the link unitl you get to something that looks like this,</p>
+<p>follow the instructions on the link unitl you get to something that looks like this, </p>
 <pre><code>cd build/
 asetup 21.2.6,AnalysisBase
 cmake ../source/
 make
 </code></pre>
-<p>you might have noticed that I have changed 125 to a 6, this is because our tier3 cluster does not have asetup 21.2.125 available to it, 
+<p>and then run the lines above instead, you might have noticed that I have changed 125 to a 6, this is because our tier3 cluster does not have asetup 21.2.125 available to it, 
 and so it is unable to setup it up. lxplus should have the cutting edge versions of asetup, but the tier3 is only updated every few years or so.
 Once you have changed 125 to 6, everything should run smoothly. And you should be able to sart your analysis. i.e Have ROOT run over DAOD (Derived Analysis Object Data) files</p>
+<h1 id="at-every-login">At Every login</h1>
+<p>From now on every time you log in, and want to do some analysis. You will need to setup asetup. You wont need to go through all the instructions that We followedc above
+but you will have to type in the following commands. But dont worry! Theres a shortcut to setting this up, called setting up an "alias".</p>
+<pre><code>cd ../build # cd to the build directory for the Athderivation you setup using the link to the release setup on lxplus above
+asetup --restore
+source x86_64-*/setup.sh
+
+</code></pre>
+<h2 id="aliases-the-shortcuts-of-command-line">Aliases, the shortcuts of command line</h2>
                 
               
               
