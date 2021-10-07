@@ -564,25 +564,19 @@ setupATLAS
 These are things like "athena"(Contains tools for general analysis like tau analysis tools),"root" (allows execution of these tools), "rucio" (allows you to access files that are stored on the CERN grid computing cluster, where we get our data DAODs and xAODs), "panda" (Allows you to submit a computing job to be executed to the CERN cluster), etc.</p>
 <p>Alternatively, If you are already familiar with how to use VS Code, Cyberduck or Filezilla, you can open the ".bash_profile" and any other file using those programs
 so that it is editable using your preferred text editor, which in the end will be more efficient in my experience for working than using emacs to edit files.</p>
-<p>````
-At this point, to activate the changes that were made to the ".bash_profile" you will either need to run ./bash_profile, or start up a new terminal.</p>
-<pre><code>
-Once the above line is done, you now have the ability to access the ATLAS analysis tools.
-So lets start by setting up a &quot;Release&quot;, the tools that are required by almost all analysis.
-
-The basic instructions to seutp a release are here
-https://atlassoftwaredocs.web.cern.ch/ABtutorial/release_setup/
-
-
-follow the instructions on the link unitl you get to something that looks like this,
-
+<pre><code>At this point, to activate the changes that were made to the &quot;.bash_profile&quot; you will either need to run ./bash_profile, or start up a new terminal.
 </code></pre>
-<p>cd build/
+<p>Once the above line is done, you now have the ability to access the ATLAS analysis tools.
+So lets start by setting up a "Release", the tools that are required by almost all analysis.</p>
+<p>The basic instructions to seutp a release are here
+https://atlassoftwaredocs.web.cern.ch/ABtutorial/release_setup/</p>
+<p>follow the instructions on the link unitl you get to something that looks like this,</p>
+<pre><code>cd build/
 asetup 21.2.6,AnalysisBase
 cmake ../source/
 make
-```
-you might have noticed that I have changed 125 to a 6, this is because our tier3 cluster does not have asetup 21.2.125 available to it, 
+</code></pre>
+<p>you might have noticed that I have changed 125 to a 6, this is because our tier3 cluster does not have asetup 21.2.125 available to it, 
 and so it is unable to setup it up. lxplus should have the cutting edge versions of asetup, but the tier3 is only updated every few years or so.
 Once you have changed 125 to 6, everything should run smoothly. And you should be able to sart your analysis. i.e Have ROOT run over DAOD (Derived Analysis Object Data) files</p>
                 
