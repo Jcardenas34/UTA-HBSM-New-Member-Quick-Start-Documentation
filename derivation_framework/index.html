@@ -59,7 +59,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#data-analysis" class="md-skip">
+        <a href="#the-derivation-framework" class="md-skip">
           Skip to content
         </a>
       
@@ -557,13 +557,55 @@
               
                 
                 
-                <h1 id="data-analysis">Data Analysis</h1>
-<p>Much of the basics of a particle physics analysis can be found in this document. Chapter 3 is especially immuminating to the meaning of 5 sigma. The level of certianty that we must reach in LHC experiments to claim a discovery.</p>
-<p><a href="https://www.roma1.infn.it/~bini/StatEPP_new.pdf">Data analysis for particle physics paper</a></p>
-<!-- [Data_analysis_for_particle_physics](/Data_analysis_for_particle_physics.pdf) -->
+                <h1 id="the-derivation-framework">The Derivation Framework</h1>
+<p>The Derivation framework is a framework that allows you to skim and slim data (xAODs) in a sort of filtering process so that 
+it only contains the data that is relevant to your analysis.</p>
+<p>The first step in getting this to work is by setting up an athena release which can be done in the previous section called "Athena"
+From here you want to compile only the relevant parts of your analysis, other wise this will take a while. </p>
+<p>The steps for compiling the Derivation framework and only what you need to are here</p>
+<p>https://atlassoftwaredocs.web.cern.ch/gittutorial/branch-and-change/</p>
+<p>Compiling only what is needed is called a sparse build, and this can be done using the following lines from the link abive</p>
+<p>you will start off by making a "build" directory just outside of the main "athena" directory that you oulled from github</p>
+<pre><code>mkdir ../build &amp;&amp; cd ../build
+asetup AthDerivation,21.2.101.0,here
+</code></pre>
+<p>You will then want to copy over an example text file of the package_filers.txt file from the athena repo
+This is what tells athena which packages to compile and which to leave alone.</p>
+<pre><code>cp ../athena/Projects/WorkDir/package_filters_example.txt ../package_filters.txt
+</code></pre>
+<p>from here you want to add the following line to the package_filters.txt so that the derivation framework system is usable.</p>
+<pre><code>+ PhysicsAnalysis/DerivationFramework/DerivationFrameworkExamples
+</code></pre>
+<p>and then finally build the packages that are necessary by running the lines below</p>
+<pre><code>cmake -DATLAS_PACKAGE_FILTER_FILE=../package_filters.txt ../athena/Projects/WorkDir
+make -j
+mkdir ../run &amp;&amp; cd ../run
+source ../build/x86_64-centos7-gcc62-opt/setup.sh
+</code></pre>
+<h1 id="creating-a-batch-script-to-automate-compiling-athena-and-its-chosen-packages">Creating a Batch script to automate compiling Athena and its chosen packages</h1>
+<p>Often times you will find that you need to recompile athena so that the changes you make to the derivation frame work
+i.e the selections that you make to the data can take effect. It can get pretty time consuming if you type the above lines each time you need that to happpen, so I highly advise creating an alias in your .bashrc or .bash_profile so that you can compile it quickly and easily.</p>
+<p>I created an alias called "compile_athena" that will rebuild athena, the contents of the script are </p>
+<pre><code>#!/bin/bash/
 
-<p>When starting a project, you must first be able to access the data that you will be using, for this ATLAS uses what we call the AMI, the ATLAS Metadata Interface. This is a tool to 
-find datasets and obtain detailed information on them.</p>
+pushd /eos/home-j/jcardena/HBSM_analysis/build
+asetup AthDerivation,21.2.101.0,here
+# package_filters.txt must be in the directory below the build directory for this to work
+cmake -DATLAS_PACKAGE_FILTER_FILE=../package_filters.txt ../athena/Projects/WorkDir
+make -j
+echo &quot;sourcing x86_64-centos7-gcc62-opt/setup.sh&quot;
+source x86_64-centos7-gcc62-opt/setup.sh
+popd
+
+</code></pre>
+<p>with the alias</p>
+<pre><code>alias compile_athena=&quot;source /afs/cern.ch/user/j/jcardena/bash_scripts/compile_athena.sh&quot;
+</code></pre>
+<p>After recompiling, you can run something like the following to actually perform the skims on any input xAODs you have downloaded</p>
+<p>The basic form is this</p>
+<pre><code>Reco_tf.py--maxEvents 200 --inputAODFile path/to/xAOD/file/AOD.12911492._000315.pool.root.1 --outputDAODFile TauJets_test.pool.root --reductionConf TEST2  
+
+</code></pre>
                 
               
               
