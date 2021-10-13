@@ -573,7 +573,8 @@ asetup AthDerivation,21.2.101.0,here
 This is what tells athena which packages to compile and which to leave alone.</p>
 <pre><code>cp ../athena/Projects/WorkDir/package_filters_example.txt ../package_filters.txt
 </code></pre>
-<p>from here you want to add the following line to the package_filters.txt so that the derivation framework system is usable.</p>
+<p>from here you want to add the following line to the package_filters.txt so that the derivation framework system is usable.
+You want to add the path to any files that you edit to the package_filters.txt</p>
 <pre><code>+ PhysicsAnalysis/DerivationFramework/DerivationFrameworkExamples
 </code></pre>
 <p>and then finally build the packages that are necessary by running the lines below</p>
@@ -606,6 +607,19 @@ popd
 <pre><code>Reco_tf.py--maxEvents 200 --inputAODFile path/to/xAOD/file/AOD.12911492._000315.pool.root.1 --outputDAODFile TauJets_test.pool.root --reductionConf TEST2  
 
 </code></pre>
+<h1 id="creating-a-custom-derivation">Creating a custom derivation</h1>
+<p>To create a derivation with your own seleciton on the data you will have to create a template file that draws from the existing
+examples in the DerivationFrameworkExamples folder.</p>
+<p>Copy over a file and name it something else, I named my first custom derivation BVeto_Hpana.py</p>
+<p>and added a custom flag to the DerivationFrameworkProdFlags.py file in DerivationFramework/DerivationFrameworkCore/python</p>
+<p>Once you have those changes made you will want to add the files that you edited to the package_filters.txt file and recompile athena</p>
+<p>your package_filters.txt has to look something like this</p>
+<p>````
++ Control/AthenaExamples/AthExHelloWorld
++ PhysicsAnalysis/DerivationFramework/DerivationFrameworkExamples/<em>
++ PhysicsAnalysis/DerivationFramework/DerivationFrameworkCore/</em>
+- .*</p>
+<p>```</p>
                 
               
               
