@@ -614,12 +614,12 @@ examples in the DerivationFrameworkExamples folder.</p>
 <p>and added a custom flag to the DerivationFrameworkProdFlags.py file in DerivationFramework/DerivationFrameworkCore/python</p>
 <p>Once you have those changes made you will want to add the files that you edited to the package_filters.txt file and recompile athena</p>
 <p>your package_filters.txt has to look something like this</p>
-<p>````
-+ Control/AthenaExamples/AthExHelloWorld
-+ PhysicsAnalysis/DerivationFramework/DerivationFrameworkExamples/<em>
-+ PhysicsAnalysis/DerivationFramework/DerivationFrameworkCore/</em>
-- .*</p>
-<p>```</p>
+<pre><code>+ Control/AthenaExamples/AthExHelloWorld
++ PhysicsAnalysis/DerivationFramework/DerivationFrameworkExamples/*
++ PhysicsAnalysis/DerivationFramework/DerivationFrameworkCore/*
+- .*
+
+</code></pre>
                 
               
               
