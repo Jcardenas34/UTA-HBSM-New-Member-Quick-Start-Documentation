@@ -574,14 +574,20 @@ to use the grid certificate.</p>
 openssl pkcs12 -in [your-cert-file] -nocerts -out ~/.globus/userkey.pem
 </code></pre>
 <p>followed by</p>
-<p><code>`
-chmod 0600 ~/.globus/usercert.pem
-chmod 0400 ~/.globus/userkey.pem</code></p>
+<pre><code>chmod 0600 ~/.globus/usercert.pem
+chmod 0400 ~/.globus/userkey.pem
+</code></pre>
 <p>The same, but more detailed version of the process above is outlined here.</p>
-<p><a href="https://www.racf.bnl.gov/docs/howto/grid/installcert">https://www.racf.bnl.gov/docs/howto/grid/installcert</a></p>
+<!-- [https://www.racf.bnl.gov/docs/howto/grid/installcert](https://www.racf.bnl.gov/docs/howto/grid/installcert) old version of the website -->
+<p><a href="https://www.sdcc.bnl.gov/information/getting-started/installing-your-grid-certificate">https://www.sdcc.bnl.gov/information/getting-started/installing-your-grid-certificate</a></p>
 <p>Once you have run the lines of code above, you can test out if the certificate is working by typing</p>
-<p>lsetup rucio
-and then setting up a proxy as instructed by lsetup.</p>
+<p>voms-proxy-init -voms atlas
+lsetup rucio</p>
+<p>You should then be able to access the GRID, rucio, pandas and anything else GRID related.</p>
+<h1 id="registering-with-the-atlas-vo">Registering with the ATLAS VO</h1>
+<p>If you are setting up the grid certificate for the first time, then you will have to register with the ATLAS VO as well.
+The information for that process is at the link above as well
+<a href="https://www.sdcc.bnl.gov/information/getting-started/installing-your-grid-certificate">https://www.sdcc.bnl.gov/information/getting-started/installing-your-grid-certificate</a></p>
                 
               
               
