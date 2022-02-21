@@ -584,8 +584,9 @@ chmod 0400 ~/.globus/userkey.pem
 <!-- [https://www.racf.bnl.gov/docs/howto/grid/installcert](https://www.racf.bnl.gov/docs/howto/grid/installcert) old version of the website -->
 <p><a href="https://www.sdcc.bnl.gov/information/getting-started/installing-your-grid-certificate">https://www.sdcc.bnl.gov/information/getting-started/installing-your-grid-certificate</a></p>
 <p>Once you have run the lines of code above, you can test out if the certificate is working by typing</p>
-<p>voms-proxy-init -voms atlas
-lsetup rucio</p>
+<pre><code>voms-proxy-init -voms atlas
+lsetup rucio
+</code></pre>
 <p>You should then be able to access the GRID, rucio, pandas and anything else GRID related.</p>
 <h1 id="registering-with-the-atlas-vo">Registering with the ATLAS VO</h1>
 <p>If you are setting up the grid certificate for the first time, then you will have to register with the ATLAS VO as well.
