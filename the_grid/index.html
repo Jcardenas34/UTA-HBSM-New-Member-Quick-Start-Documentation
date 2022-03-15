@@ -14,7 +14,7 @@
     
     
       
-        <title>Analysis - HBSM UTA Docs</title>
+        <title>The Grid - HBSM UTA Docs</title>
       
     
     
@@ -58,11 +58,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#data-analysis" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -89,7 +84,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Analysis
+              The Grid
             
           </span>
         </div>
@@ -439,6 +434,18 @@
             
   
   
+  
+    <li class="md-nav__item">
+      <a href="../data_analysis/" class="md-nav__link">
+        Analysis
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
     
   
   
@@ -447,25 +454,11 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
-        
-      
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Analysis
-      </a>
-      
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../the_grid/" class="md-nav__link">
         The Grid
       </a>
+      
     </li>
   
 
@@ -546,36 +539,20 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                <h1 id="data-analysis">Data Analysis</h1>
-<p>Much of the basics of a particle physics analysis can be found in this document. Chapter 3 is especially immuminating to the meaning of 5 sigma. The level of certianty that we must reach in LHC experiments to claim a discovery.</p>
-<p><a href="https://www.roma1.infn.it/~bini/StatEPP_new.pdf">Data analysis for particle physics paper</a></p>
-<!-- [Data_analysis_for_particle_physics](/Data_analysis_for_particle_physics.pdf) -->
-
-<p>When starting a project, you must first be able to access the data that you will be using, for this ATLAS uses what we call the AMI, the ATLAS Metadata Interface. This is a tool to 
-find datasets and obtain detailed information on them.</p>
+                  <h1>The Grid</h1>
+                
+                <p>Often times, in your analysis you will have to run your data analysis scripts of data that is too large to be stored locally
+(on the order of ~TB or even ~PB) and so you must make use of the Comupting resources offered by CERN called the GRID, where the data is stored, and often processed.</p>
+<p>The GRID is a massive international network of computers (CPUs and a small number of GPUs) that process the data produced by the various detectors at CERN, including ATLAS.</p>
+<p>In order to access the data, or see what is available at least, you will have to become familiar with a data retreival and tracking software called RUCIO as well as a job submission management software called JEDI.</p>
+<p>Here is a link to some of the documentation for RUCIO, this page tells you what it is
+(What is Rucio)[https://rucio.cern.ch/documentation/what_is_rucio/]    </p>
                 
               
               
@@ -594,7 +571,7 @@ find datasets and obtain detailed information on them.</p>
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../neuralnets/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../data_analysis/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -603,19 +580,19 @@ find datasets and obtain detailed information on them.</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              Neural Networks
+              Analysis
             </div>
           </div>
         </a>
       
       
-        <a href="../the_grid/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../derivation_framework/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              The Grid
+              Derivation Framework
             </div>
           </div>
           <div class="md-footer__button md-icon">
