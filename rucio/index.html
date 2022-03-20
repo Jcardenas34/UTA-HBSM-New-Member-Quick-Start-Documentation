@@ -14,7 +14,7 @@
     
     
       
-        <title>MadGraph - HBSM UTA Docs</title>
+        <title>Accessting Files, Rucio - HBSM UTA Docs</title>
       
     
     
@@ -59,7 +59,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#getting-started-with-madgraph" class="md-skip">
+        <a href="#rucio" class="md-skip">
           Skip to content
         </a>
       
@@ -89,7 +89,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              MadGraph
+              Accessting Files, Rucio
             
           </span>
         </div>
@@ -463,11 +463,21 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../rucio/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Accessting Files, Rucio
       </a>
+      
     </li>
   
 
@@ -487,47 +497,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          MadGraph
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../madgraph/" class="md-nav__link">
         MadGraph
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#getting-started-with-madgraph" class="md-nav__link">
-    Getting Started with MadGraph
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -593,21 +567,8 @@
   
   
   
+    
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#getting-started-with-madgraph" class="md-nav__link">
-    Getting Started with MadGraph
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -620,36 +581,19 @@
               
                 
                 
-                  <h1>MadGraph</h1>
-                
-                <h2 id="getting-started-with-madgraph">Getting Started with MadGraph</h2>
-<p><img alt="MadGraph_Logo" src="img/madgraph5.png" /></p>
-<p>Any particle physics analysis needs to be able to simulate the physics processes that we beleive to be happening 
-before we look for them in the actual real life data. And there are a suite of different software that allows you to simulate these 
-physics processes, which means creating proton proton collisions that create new particles which then decay the way that they do in
-real life. The first step in the simulation process is simulating these proton proton collisions to a given procss that we are interested in. We can simulate these processes using a software that we call <a href="http://madgraph.physics.illinois.edu/">MadGraph</a></p>
-<p>As stated, MadGraph simulates different particle interations that are of interest to you. It also allows you to simulate physics processes
-that are outside the standard model by importing the model that you are interested in. for example, Madgraph allows you to simulate
-'''
-p p &gt; t t~
-'''</p>
-<p>Which is a completely standard model process (proton proton goes to top and an anti-top), or if you import the MSSM model (Minimally super symmetric model) you can gain access to all the particles in that theory and generate this process</p>
+                <h1 id="rucio">Rucio</h1>
+<p>Rucio is a program installed on lxplus that allows us as users to access data that is stored on the grid.
+If you submit jobs to be executed on the grid, then those files will then be stored on some GRID site.
+(A physical location that has many hundreds of harddrives where the data is stored.)</p>
+<p>In order to search these grid sites for the data that you want to access, you will need to use rucio.</p>
+<p>The first step in using rucio to access datasets that either you have created or others have created is by
+logging into lxplus and setting up a connection to the lxplus proxy, and then settin gup rucio</p>
 <p>'''
-p p &gt; st st~
-'''</p>
-<p>Which is proton proton goes to stau anti-stau, where the stau is a super symmetric particle</p>
-<p>instructions on how to get started are below </p>
-<ol>
-<li>Create an account with MadGraph using the following link <a href="http://madgraph.physics.illinois.edu/">MadGraph account creation</a></li>
-<li>Once you created your account, go to the downloads link there and log in</li>
-<li>Once logged in right click on the "MadGraph5_aMC@NLO" link and select "Copy link address"</li>
-<li>Log into the tier3 and type "wget the_link_you_just_copied"</li>
-<li>Untar this file by doing tar -xvf file_you_just_downloaded.</li>
-<li>then navigate to the folder that was just created and type ./bin/mg5_aMC or python2.7 ./bin/mg5_amc if this does not work at first</li>
-<li>type "tutorial" and the madgraph tutorial should take it from there</li>
-</ol>
-<p>The section below will answer some questions about whats going on in madgraph, these are some questions I had anyway.</p>
-<p>FAQ:</p>
+voms-proxy-init -voms atlas
+lsetup rucio
+''' </p>
+<p>Some docuemtnation on how to use rucio provided by some CERN users is here</p>
+<p>(https://rucio.readthedocs.io/en/latest/index.html)</p>
                 
               
               
@@ -668,7 +612,7 @@ p p &gt; st st~
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../derivation_framework/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../the_grid/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -677,19 +621,19 @@ p p &gt; st st~
               <span class="md-footer__direction">
                 Previous
               </span>
-              Derivation Framework
+              The Grid
             </div>
           </div>
         </a>
       
       
-        <a href="../athena_eventloop/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../derivation_framework/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Athena and Eventloop
+              Derivation Framework
             </div>
           </div>
           <div class="md-footer__button md-icon">
